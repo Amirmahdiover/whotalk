@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="435f470c-b09e-4ffa-8a54-b7fea4fa4976" name="Changes" comment="change ip fetch">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/home/js/newj.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/home/js/newj.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Python Script" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/stable" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="stable" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;shessam&quot;
+  }
+}</component>
+  <component name="GitLabMergeRequestFiltersHistory">{
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GitLabMergeRequestsSettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;first&quot;: &quot;https://hamgit.ir/shessam/whotalk.git&quot;,
+    &quot;second&quot;: &quot;1b1e2489-c3bc-4c5b-b82e-5284d1d19620&quot;
+  }
+}</component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="8de4c427-0a40-485c-bc42-3aef69293117" />
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/shessam/WhoTalk.git&quot;,
+    &quot;accountId&quot;: &quot;8de4c427-0a40-485c-bc42-3aef69293117&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../WhoTalk/WhoTalk/asgi.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2p49LB8y8PaqvCcAEYOmtFKL8jC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Django Server.WhoTalk.executor&quot;: &quot;ConcurrencyExecutor&quot;,
+    &quot;Django Server.djangoProjectChatBot.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#4 on stable&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/hessam/PycharmProjects/djangoProjectChatBot&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;
+    ],
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/home/templates/home" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="djangoProjectChatBot" type="Python.DjangoServer" factoryName="Django server">
+      <module name="djangoProjectChatBot" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="djangoProjectChatBot.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (djangoProjectChatBot)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="localhost" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-PY-243.21565.199" />
+        <option value="bundled-python-sdk-cab1f2013843-4ae2d6a61b08-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.21565.199" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="435f470c-b09e-4ffa-8a54-b7fea4fa4976" name="Changes" comment="" />
+      <created>1732014421561</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732014421561</updated>
+      <workItem from="1732014427016" duration="2837000" />
+      <workItem from="1732081250247" duration="9408000" />
+      <workItem from="1732097731981" duration="6005000" />
+      <workItem from="1732128335699" duration="54000" />
+      <workItem from="1732340596740" duration="480000" />
+      <workItem from="1732341147270" duration="786000" />
+      <workItem from="1732342024839" duration="801000" />
+      <workItem from="1732343673309" duration="5114000" />
+      <workItem from="1732359119638" duration="1181000" />
+      <workItem from="1732361892282" duration="9000" />
+      <workItem from="1732362517533" duration="18000" />
+      <workItem from="1732362620072" duration="11000" />
+      <workItem from="1732362897879" duration="26000" />
+      <workItem from="1732427030083" duration="1740000" />
+      <workItem from="1732430562297" duration="131000" />
+      <workItem from="1732430738123" duration="8117000" />
+      <workItem from="1732442600902" duration="7958000" />
+      <workItem from="1732458499262" duration="2879000" />
+      <workItem from="1732469452263" duration="128000" />
+      <workItem from="1732516297236" duration="9609000" />
+      <workItem from="1732528919856" duration="7990000" />
+      <workItem from="1732549592523" duration="2230000" />
+      <workItem from="1732599282810" duration="9302000" />
+      <workItem from="1732615611229" duration="8255000" />
+      <workItem from="1732634385179" duration="133000" />
+      <workItem from="1732688031662" duration="11234000" />
+      <workItem from="1732703626268" duration="5775000" />
+      <workItem from="1732714361604" duration="663000" />
+      <workItem from="1732719870053" duration="815000" />
+      <workItem from="1732732906016" duration="10740000" />
+      <workItem from="1732947075226" duration="11039000" />
+      <workItem from="1732961287575" duration="8044000" />
+      <workItem from="1732980017429" duration="497000" />
+      <workItem from="1733031396766" duration="11011000" />
+      <workItem from="1733045033240" duration="371000" />
+      <workItem from="1733047982868" duration="9061000" />
+      <workItem from="1733118083579" duration="12167000" />
+      <workItem from="1733134099825" duration="8072000" />
+      <workItem from="1733203974083" duration="11070000" />
+      <workItem from="1733221069032" duration="7345000" />
+      <workItem from="1733247837327" duration="6410000" />
+      <workItem from="1733290554649" duration="20615000" />
+      <workItem from="1733338985652" duration="2904000" />
+      <workItem from="1733486434078" duration="30000" />
+      <workItem from="1733486861623" duration="3182000" />
+      <workItem from="1733494563474" duration="5119000" />
+      <workItem from="1733500075996" duration="295000" />
+      <workItem from="1733500386924" duration="2000" />
+      <workItem from="1733513800866" duration="3420000" />
+      <workItem from="1733550851127" duration="12410000" />
+      <workItem from="1733565962476" duration="7935000" />
+      <workItem from="1733580962293" duration="138000" />
+      <workItem from="1733635834913" duration="12742000" />
+      <workItem from="1733652558501" duration="11066000" />
+      <workItem from="1733664293641" duration="9000" />
+      <workItem from="1733680090759" duration="7065000" />
+      <workItem from="1733724191807" duration="11323000" />
+      <workItem from="1733739810182" duration="7710000" />
+      <workItem from="1733807611584" duration="10956000" />
+      <workItem from="1733894553977" duration="8411000" />
+      <workItem from="1733911267423" duration="6938000" />
+      <workItem from="1734153998400" duration="4911000" />
+      <workItem from="1734166157485" duration="2902000" />
+      <workItem from="1734171764929" duration="9068000" />
+      <workItem from="1734193481564" duration="4863000" />
+      <workItem from="1734239703403" duration="3635000" />
+      <workItem from="1734244122990" duration="9111000" />
+      <workItem from="1734256584588" duration="5260000" />
+      <workItem from="1734326389481" duration="19775000" />
+      <workItem from="1734413195729" duration="16509000" />
+      <workItem from="1734499075982" duration="19512000" />
+      <workItem from="1734762068434" duration="19748000" />
+      <workItem from="1734793760725" duration="2375000" />
+      <workItem from="1734806913539" duration="4950000" />
+      <workItem from="1734845806459" duration="21615000" />
+      <workItem from="1734932030216" duration="78000" />
+      <workItem from="1734932659657" duration="15074000" />
+      <workItem from="1734957295549" duration="2004000" />
+      <workItem from="1734967032809" duration="190000" />
+      <workItem from="1734967233435" duration="1760000" />
+      <workItem from="1734969004256" duration="151000" />
+      <workItem from="1734969498148" duration="171000" />
+      <workItem from="1734969800056" duration="97000" />
+      <workItem from="1734970959008" duration="42000" />
+      <workItem from="1734971043520" duration="827000" />
+      <workItem from="1734971878898" duration="342000" />
+      <workItem from="1735025198039" duration="7076000" />
+      <workItem from="1735035441510" duration="10905000" />
+      <workItem from="1735104313433" duration="5292000" />
+      <workItem from="1735111755103" duration="3152000" />
+      <workItem from="1735121405718" duration="9289000" />
+      <workItem from="1735362366412" duration="19423000" />
+      <workItem from="1735395965533" duration="213000" />
+      <workItem from="1735449951933" duration="23775000" />
+      <workItem from="1735482688696" duration="3135000" />
+      <workItem from="1735498628806" duration="490000" />
+      <workItem from="1735500139180" duration="791000" />
+      <workItem from="1735501391108" duration="623000" />
+      <workItem from="1735502553361" duration="491000" />
+      <workItem from="1735540089105" duration="19698000" />
+      <workItem from="1735585394313" duration="204000" />
+      <workItem from="1735622043764" duration="20996000" />
+      <workItem from="1735650229594" duration="87000" />
+      <workItem from="1735656161080" duration="3123000" />
+      <workItem from="1735659878221" duration="328000" />
+      <workItem from="1735660643077" duration="316000" />
+      <workItem from="1735669378050" duration="3482000" />
+      <workItem from="1735673724773" duration="2106000" />
+      <workItem from="1735709688843" duration="21431000" />
+      <workItem from="1735742090588" duration="3397000" />
+      <workItem from="1735745657205" duration="27000" />
+      <workItem from="1735747612233" duration="739000" />
+      <workItem from="1735968668440" duration="6408000" />
+      <workItem from="1736054574007" duration="24479000" />
+      <workItem from="1736081665466" duration="105000" />
+      <workItem from="1736096924340" duration="2524000" />
+      <workItem from="1736142264677" duration="22906000" />
+      <workItem from="1736182206082" duration="3267000" />
+      <workItem from="1736226736568" duration="22659000" />
+      <workItem from="1736270989869" duration="3962000" />
+      <workItem from="1736313435006" duration="22088000" />
+      <workItem from="1736341401193" duration="364000" />
+      <workItem from="1736342076374" duration="235000" />
+      <workItem from="1736350758704" duration="3942000" />
+      <workItem from="1736355906102" duration="1830000" />
+      <workItem from="1736359423702" duration="437000" />
+      <workItem from="1736359959406" duration="21000" />
+      <workItem from="1736360441367" duration="111000" />
+      <workItem from="1736360627119" duration="3000" />
+      <workItem from="1736431858275" duration="5415000" />
+      <workItem from="1736440888158" duration="6367000" />
+      <workItem from="1736454881683" duration="4050000" />
+      <workItem from="1736572064252" duration="23377000" />
+      <workItem from="1736615894601" duration="6059000" />
+      <workItem from="1736658056185" duration="22948000" />
+      <workItem from="1736745914096" duration="26004000" />
+      <workItem from="1736778762746" duration="184000" />
+      <workItem from="1736784984628" duration="12222000" />
+      <workItem from="1736798350855" duration="571000" />
+      <workItem from="1736799295511" duration="13000" />
+      <workItem from="1736799323786" duration="445000" />
+      <workItem from="1736800014388" duration="650000" />
+      <workItem from="1736917514066" duration="25064000" />
+      <workItem from="1736952673797" duration="633000" />
+      <workItem from="1736958509595" duration="14204000" />
+      <workItem from="1736977195238" duration="371000" />
+      <workItem from="1736977795415" duration="997000" />
+      <workItem from="1737013965503" duration="6045000" />
+      <workItem from="1737022351767" duration="213000" />
+      <workItem from="1737177978269" duration="16913000" />
+      <workItem from="1737209383920" duration="725000" />
+      <workItem from="1737210194087" duration="403000" />
+      <workItem from="1737264184817" duration="17101000" />
+      <workItem from="1737350907706" duration="6702000" />
+      <workItem from="1737783138832" duration="8841000" />
+      <workItem from="1737803356728" duration="4201000" />
+      <workItem from="1737956338916" duration="18148000" />
+      <workItem from="1738387402318" duration="14079000" />
+      <workItem from="1738560175969" duration="17844000" />
+      <workItem from="1738587067968" duration="700000" />
+      <workItem from="1738733140816" duration="17226000" />
+      <workItem from="1738754337943" duration="8118000" />
+      <workItem from="1738763934839" duration="79000" />
+      <workItem from="1738992290373" duration="16207000" />
+      <workItem from="1739078417568" duration="8763000" />
+      <workItem from="1739101079783" duration="6090000" />
+      <workItem from="1739597144924" duration="14114000" />
+      <workItem from="1739769532600" duration="62000" />
+      <workItem from="1739775871119" duration="9518000" />
+      <workItem from="1740146162233" duration="8666000" />
+      <workItem from="1740203922490" duration="8631000" />
+      <workItem from="1740213035311" duration="3870000" />
+      <workItem from="1740220370507" duration="5830000" />
+      <workItem from="1740381101182" duration="8698000" />
+    </task>
+    <task id="LOCAL-00066" summary="change newj.js for style chatbot 15">
+      <option name="closed" value="true" />
+      <created>1739006316963</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1739006316963</updated>
+    </task>
+    <task id="LOCAL-00067" summary="change newj.js for style chatbot 16">
+      <option name="closed" value="true" />
+      <created>1739006878515</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1739006878515</updated>
+    </task>
+    <task id="LOCAL-00068" summary="change newj.js for style chatbot 17">
+      <option name="closed" value="true" />
+      <created>1739010753312</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1739010753312</updated>
+    </task>
+    <task id="LOCAL-00069" summary="change newj.js for style chatbot header">
+      <option name="closed" value="true" />
+      <created>1739011366902</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1739011366902</updated>
+    </task>
+    <task id="LOCAL-00070" summary="change newj.js for style chatbot header 2">
+      <option name="closed" value="true" />
+      <created>1739012016986</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1739012016986</updated>
+    </task>
+    <task id="LOCAL-00071" summary="change newj.js for style chatbot header 3">
+      <option name="closed" value="true" />
+      <created>1739012862679</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1739012862679</updated>
+    </task>
+    <task id="LOCAL-00072" summary="change time of admin messages">
+      <option name="closed" value="true" />
+      <created>1739079088037</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1739079088037</updated>
+    </task>
+    <task id="LOCAL-00073" summary="change time of admin messages 2">
+      <option name="closed" value="true" />
+      <created>1739079807347</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1739079807347</updated>
+    </task>
+    <task id="LOCAL-00074" summary="change view of API">
+      <option name="closed" value="true" />
+      <created>1739082077196</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1739082077196</updated>
+    </task>
+    <task id="LOCAL-00075" summary="change view of API Task">
+      <option name="closed" value="true" />
+      <created>1739082771120</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1739082771120</updated>
+    </task>
+    <task id="LOCAL-00076" summary="change view of API Task 2">
+      <option name="closed" value="true" />
+      <created>1739083521533</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1739083521533</updated>
+    </task>
+    <task id="LOCAL-00077" summary="change view of API Task 3">
+      <option name="closed" value="true" />
+      <created>1739083885700</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1739083885700</updated>
+    </task>
+    <task id="LOCAL-00078" summary="change view of API Task 4">
+      <option name="closed" value="true" />
+      <created>1739084394509</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1739084394509</updated>
+    </task>
+    <task id="LOCAL-00079" summary="change view of API Task 5">
+      <option name="closed" value="true" />
+      <created>1739084948709</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1739084948709</updated>
+    </task>
+    <task id="LOCAL-00080" summary="change view of API Task 6">
+      <option name="closed" value="true" />
+      <created>1739086143090</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1739086143090</updated>
+    </task>
+    <task id="LOCAL-00081" summary="change settings.py for hosts">
+      <option name="closed" value="true" />
+      <created>1739102002449</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1739102002449</updated>
+    </task>
+    <task id="LOCAL-00082" summary="change settings.py for hosts 2">
+      <option name="closed" value="true" />
+      <created>1739102650582</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1739102650582</updated>
+    </task>
+    <task id="LOCAL-00083" summary="change settings.py for hosts 3">
+      <option name="closed" value="true" />
+      <created>1739103533082</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1739103533082</updated>
+    </task>
+    <task id="LOCAL-00084" summary="change settings.py for hosts 4">
+      <option name="closed" value="true" />
+      <created>1739104600684</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1739104600684</updated>
+    </task>
+    <task id="LOCAL-00085" summary="change settings.py for hosts 5">
+      <option name="closed" value="true" />
+      <created>1739106823379</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1739106823379</updated>
+    </task>
+    <task id="LOCAL-00086" summary="change messages show admin">
+      <option name="closed" value="true" />
+      <created>1739601172404</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1739601172405</updated>
+    </task>
+    <task id="LOCAL-00087" summary="change messages body for api">
+      <option name="closed" value="true" />
+      <created>1739603864568</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1739603864568</updated>
+    </task>
+    <task id="LOCAL-00088" summary="change messages body for api 2">
+      <option name="closed" value="true" />
+      <created>1739604185109</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1739604185109</updated>
+    </task>
+    <task id="LOCAL-00089" summary="change messages body for api 3">
+      <option name="closed" value="true" />
+      <created>1739609788217</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1739609788217</updated>
+    </task>
+    <task id="LOCAL-00090" summary="change messages body for api 4">
+      <option name="closed" value="true" />
+      <created>1739610412261</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1739610412261</updated>
+    </task>
+    <task id="LOCAL-00091" summary="change messages body for api 5">
+      <option name="closed" value="true" />
+      <created>1739610972445</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1739610972446</updated>
+    </task>
+    <task id="LOCAL-00092" summary="change messages body for api 6">
+      <option name="closed" value="true" />
+      <created>1739611805573</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1739611805573</updated>
+    </task>
+    <task id="LOCAL-00093" summary="change messages body for api 7">
+      <option name="closed" value="true" />
+      <created>1739612383109</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1739612383109</updated>
+    </task>
+    <task id="LOCAL-00094" summary="change messages body for api 8">
+      <option name="closed" value="true" />
+      <created>1739612690528</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1739612690528</updated>
+    </task>
+    <task id="LOCAL-00095" summary="change messages body for api 9">
+      <option name="closed" value="true" />
+      <created>1739612966724</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1739612966724</updated>
+    </task>
+    <task id="LOCAL-00096" summary="change messages body for api 10">
+      <option name="closed" value="true" />
+      <created>1739613083266</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1739613083266</updated>
+    </task>
+    <task id="LOCAL-00097" summary="change messages body for api 11">
+      <option name="closed" value="true" />
+      <created>1739619386177</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1739619386177</updated>
+    </task>
+    <task id="LOCAL-00098" summary="change messages body for api 12">
+      <option name="closed" value="true" />
+      <created>1739619942014</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1739619942014</updated>
+    </task>
+    <task id="LOCAL-00099" summary="change messages body for api 13">
+      <option name="closed" value="true" />
+      <created>1739620599448</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1739620599448</updated>
+    </task>
+    <task id="LOCAL-00100" summary="add subscription">
+      <option name="closed" value="true" />
+      <created>1739779141472</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1739779141473</updated>
+    </task>
+    <task id="LOCAL-00101" summary="add subscription 2">
+      <option name="closed" value="true" />
+      <created>1739779728336</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1739779728336</updated>
+    </task>
+    <task id="LOCAL-00102" summary="edit userip">
+      <option name="closed" value="true" />
+      <created>1739783817580</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1739783817580</updated>
+    </task>
+    <task id="LOCAL-00103" summary="edit userip 2">
+      <option name="closed" value="true" />
+      <created>1739784525453</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1739784525453</updated>
+    </task>
+    <task id="LOCAL-00104" summary="chatbot design">
+      <option name="closed" value="true" />
+      <created>1739787962423</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1739787962423</updated>
+    </task>
+    <task id="LOCAL-00105" summary="chatbot design 2">
+      <option name="closed" value="true" />
+      <created>1739788255607</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1739788255607</updated>
+    </task>
+    <task id="LOCAL-00106" summary="add subs + factor new version">
+      <option name="closed" value="true" />
+      <created>1740224709928</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1740224709928</updated>
+    </task>
+    <task id="LOCAL-00107" summary="add subs + factor new version 2">
+      <option name="closed" value="true" />
+      <created>1740224958923</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1740224958923</updated>
+    </task>
+    <task id="LOCAL-00108" summary="add subs + factor new version 3">
+      <option name="closed" value="true" />
+      <created>1740226561554</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1740226561554</updated>
+    </task>
+    <task id="LOCAL-00109" summary="edit api">
+      <option name="closed" value="true" />
+      <created>1740383815946</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1740383815947</updated>
+    </task>
+    <task id="LOCAL-00110" summary="edit api 2">
+      <option name="closed" value="true" />
+      <created>1740384419940</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1740384419940</updated>
+    </task>
+    <task id="LOCAL-00111" summary="edit api 3">
+      <option name="closed" value="true" />
+      <created>1740384970022</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1740384970022</updated>
+    </task>
+    <task id="LOCAL-00112" summary="edit api 4">
+      <option name="closed" value="true" />
+      <created>1740385648071</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1740385648071</updated>
+    </task>
+    <task id="LOCAL-00113" summary="pic of admin">
+      <option name="closed" value="true" />
+      <created>1740389015700</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1740389015700</updated>
+    </task>
+    <task id="LOCAL-00114" summary="change ip fetch">
+      <option name="closed" value="true" />
+      <created>1740389199442</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1740389199442</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="38666608-ea0a-42e0-abf4-40ec22eab76c" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="38666608-ea0a-42e0-abf4-40ec22eab76c">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="change messages body for api 4" />
+    <MESSAGE value="change messages body for api 5" />
+    <MESSAGE value="change messages body for api 6" />
+    <MESSAGE value="change messages body for api 7" />
+    <MESSAGE value="change messages body for api 8" />
+    <MESSAGE value="change messages body for api 9" />
+    <MESSAGE value="change messages body for api 10" />
+    <MESSAGE value="change messages body for api 11" />
+    <MESSAGE value="change messages body for api 12" />
+    <MESSAGE value="change messages body for api 13" />
+    <MESSAGE value="add subscription" />
+    <MESSAGE value="add subscription 2" />
+    <MESSAGE value="edit userip" />
+    <MESSAGE value="edit userip 2" />
+    <MESSAGE value="chatbot design" />
+    <MESSAGE value="chatbot design 2" />
+    <MESSAGE value="add subs + factor new version" />
+    <MESSAGE value="add subs + factor new version 2" />
+    <MESSAGE value="add subs + factor new version 3" />
+    <MESSAGE value="edit api" />
+    <MESSAGE value="edit api 2" />
+    <MESSAGE value="edit api 3" />
+    <MESSAGE value="edit api 4" />
+    <MESSAGE value="pic of admin" />
+    <MESSAGE value="change ip fetch" />
+    <option name="LAST_COMMIT_MESSAGE" value="change ip fetch" />
+  </component>
+</project>

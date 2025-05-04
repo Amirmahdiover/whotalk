@@ -1,0 +1,165 @@
+.subscription-creation {
+    width: 98%;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    height: 100%;
+    /*overflow-y: hidden;*/
+    overflow-x: hidden;
+}
+
+.subscription-container {
+    width: 100%;
+    padding: 5px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 400px);
+    overflow: hidden;
+}
+
+/* Error Message */
+.error {
+    background: #ffebee;
+    color: #b71c1c;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border-left: 4px solid #d32f2f;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.error strong {
+    font-weight: 600;
+}
+
+.card {
+    /*background: #ffffff;*/
+    /*border-radius: 12px;*/
+    /*padding: 12px 20px;*/
+    background: #f8f9fa;
+    border-radius: 12px;
+    /*box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);*/
+    padding: 30px;
+    max-width: 90%;
+    margin: 20px;
+    display: grid;
+    gap: 20px;
+}
+
+/* User Info Styles */
+.subscription-creation p {
+    margin: 0;
+    padding: 12px 20px;
+    display: grid;
+    border-radius: 8px;
+    grid-template-columns: 120px 1fr;
+    gap: 15px;
+    align-items: center;
+    font-size: 15px;
+    border: 1px solid #eee;
+}
+
+.subscription-creation p strong {
+    color: #2d3436;
+    font-weight: 600;
+}
+
+/* Payment Button */
+.subscription-creation form button {
+    font-family: 'Yekan Bakh FaNum', Arial, sans-serif;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #6B42C6;
+    border: 1px solid #6B42C6;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+    margin: 15px 0;
+}
+
+.subscription-creation form button:hover {
+    background-color: rgba(107, 66, 198, 0.2);
+    color: #6B42C6;
+    border: 1px solid #6B42C6;
+}
+
+/* Back Link */
+.subscription-creation a {
+    color: #FFC450;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 6px;
+}
+
+.subscription-creation a:hover {
+    color: #2d3436;
+    background: #f8f9fa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        padding: 20px;
+        margin: 15px;
+    }
+
+    .subscription-creation p {
+        grid-template-columns: 1fr;
+        padding: 25px;
+        font-size: 14px;
+    }
+
+    .subscription-creation p strong {
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    .subscription-creation form button {
+        max-width: 100%;
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        border-radius: 8px;
+        padding: 15px;
+    }
+
+    .subscription-creation p {
+        font-size: 13px;
+        padding: 12px;
+    }
+
+    .error {
+        font-size: 13px;
+        padding: 12px;
+    }
+}

@@ -1,0 +1,378 @@
+.subscription-creation {
+    width: 98%;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    height: 100%;
+    /*overflow-y: hidden;*/
+    overflow-x: hidden;
+}
+
+.subscription-container {
+    width: 100%;
+    padding: 5px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 400px);
+    overflow: hidden;
+}
+
+/*!* پیغام خطا *!*/
+/*.error {*/
+/*    background-color: #ffebeb;*/
+/*    color: #d8000c;*/
+/*    border: 1px solid #fcc;*/
+/*    border-radius: 6px;*/
+/*    padding: 15px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*!* لیست پلن‌ها *!*/
+/*ul.plan-list {*/
+/*    list-style: none;*/
+/*    width: 100%;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*ul.plan-list li {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    padding: 15px;*/
+/*    margin-bottom: 15px;*/
+/*    background: #f9f9f9;*/
+/*    border: 1px solid #e1e1e1;*/
+/*    border-radius: 6px;*/
+/*    transition: background 0.3s ease;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*ul.plan-list li:hover {*/
+/*    background: #f1f1f1;*/
+/*}*/
+
+/*ul.plan-list li input[type="radio"] {*/
+/*    accent-color: #6B42C6;*/
+/*    width: 15px;*/
+/*    height: 15px;*/
+/*    margin-right: 15px;*/
+/*    margin-top: -2px;*/
+/*}*/
+
+/*ul.plan-list li label {*/
+/*    font-size: 16px;*/
+/*    width: 100%;*/
+/*}*/
+
+/*!* دکمه‌های ارسال *!*/
+/*button[type="submit"] {*/
+/*    font-family: 'Yekan Bakh FaNum', Arial, sans-serif;*/
+/*    display: inline-block;*/
+/*    padding: 10px 20px;*/
+/*    font-size: 14px;*/
+/*    cursor: pointer;*/
+/*    color: #fff;*/
+/*    background-color: #6B42C6;*/
+/*    border: 1px solid #6B42C6;*/
+/*    border-radius: 8px;*/
+/*    text-decoration: none;*/
+/*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+/*    transition: background-color 0.3s ease;*/
+/*}*/
+
+/*button[type="submit"]:hover {*/
+/*    background-color: rgba(107, 66, 198, 0.2);*/
+/*    color: #6B42C6;*/
+/*    border: 1px solid #6B42C6;*/
+/*}*/
+
+/*!* لینک بازگشت *!*/
+/*.back-link {*/
+/*    display: inline-block;*/
+/*    text-align: center;*/
+/*    margin-top: 20px;*/
+/*    color: #555;*/
+/*    text-decoration: none;*/
+/*    transition: color 0.3s ease;*/
+/*}*/
+
+/*.back-link:hover {*/
+/*    color: #000;*/
+/*}*/
+
+/*!* Media Query برای نمایش در دستگاه‌های کوچکتر *!*/
+/*@media (max-width: 768px) {*/
+/*    .subscription-container {*/
+/*        margin: 10px;*/
+/*        max-width: 100%;*/
+/*    }*/
+
+/*    .subscription-creation {*/
+/*        padding: 20px;*/
+/*    }*/
+
+/*    button[type="submit"] {*/
+/*        padding: 12px;*/
+/*        font-size: 14px;*/
+/*        width: 100%;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 480px) {*/
+/*    body {*/
+/*        padding: 10px;*/
+/*    }*/
+
+/*    ul.plan-list li {*/
+/*        flex-direction: column;*/
+/*        align-items: flex-start;*/
+/*    }*/
+
+/*    ul.plan-list li input[type="radio"] {*/
+/*        margin-bottom: 10px;*/
+/*    }*/
+
+/*    button[type="submit"] {*/
+/*        padding: 12px;*/
+/*        font-size: 14px;*/
+/*        width: 100%;*/
+/*    }*/
+/*}*/
+
+
+:root {
+    --primary-color: #6B42C6;
+    --primary-hover: #5A35B0;
+    --background: #f8f9fa;
+    --text-color: #2d3748;
+    --error-bg: #fff0f0;
+    --error-text: #dc2626;
+}
+
+/*.subscription-container {*/
+/*    max-width: 1200px;*/
+/*    margin: 2rem auto;*/
+/*    padding: 0 1rem;*/
+/*}*/
+
+/*.subscription-creation {*/
+/*    background: white;*/
+/*    border-radius: 1.5rem;*/
+/*    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);*/
+/*    padding: 2rem;*/
+/*}*/
+
+.error-message {
+    background: var(--error-bg);
+    color: var(--error-text);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--error-text);
+}
+
+.error-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.plan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+.plan-card {
+    position: relative;
+    border: 2px solid #e2e8f0;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    background: white;
+}
+
+/* حالت انتخاب شده */
+.plan-card:has(.plan-radio:checked) {
+    border-color: var(--primary-color);
+    background: rgba(107, 66, 198, 0.05);
+    box-shadow: 0 0 0 2px var(--primary-color);
+}
+
+/* هایلایت حاشیه در حالت hover */
+.plan-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+/* حذف استایل‌های قدیمی برای انتخاب */
+.plan-radio:checked + .plan-content {
+    border-color: transparent; /* غیرفعال کردن استایل قدیمی */
+    background: transparent;
+}
+
+/* بهبود افکت انتقال */
+.plan-card,
+.plan-card * {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/*.plan-card {*/
+/*    position: relative;*/
+/*    border: 2px solid #e2e8f0;*/
+/*    border-radius: 1rem;*/
+/*    padding: 1.5rem;*/
+/*    cursor: pointer;*/
+/*    transition: all 0.3s ease;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.plan-card:hover {*/
+/*    border-color: var(--primary-color);*/
+/*    transform: translateY(-5px);*/
+/*}*/
+
+/*.plan-radio {*/
+/*    position: absolute;*/
+/*    opacity: 0;*/
+/*}*/
+
+/*.plan-radio:checked + .plan-content {*/
+/*    border-color: var(--primary-color);*/
+/*    background: rgba(107, 66, 198, 0.05);*/
+/*    border-radius: 1rem;*/
+/*}*/
+
+/*.plan-radio:checked + .plan-content .selected-indicator {*/
+/*    opacity: 1;*/
+/*}*/
+
+.plan-content {
+    position: relative;
+    height: 100%;
+}
+
+.plan-title {
+    color: var(--text-color);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.plan-price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.currency {
+    font-size: 1rem;
+    color: #718096;
+}
+
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+    color: #4a5568;
+}
+
+.plan-features li {
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.plan-features li:before {
+    content: "✓";
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.selected-indicator {
+    position: absolute;
+    top: 1rem;
+    left: -2rem;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.25rem 1.5rem;
+    transform: rotate(-45deg);
+    font-size: 0.875rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.checkmark {
+    width: 1rem;
+    height: 1rem;
+}
+
+.submit-button {
+    background: var(--primary-color);
+    padding: 1rem 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 auto;
+    font-family: 'Yekan Bakh FaNum', Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    background-color: #6B42C6;
+    border: 1px solid #6B42C6;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+    /*box-shadow: 0 4px 6px -1px rgba(107, 66, 198, 0.2);*/
+    background-color: rgba(107, 66, 198, 0.2);
+    color: #6B42C6;
+    border: 1px solid #6B42C6;
+}
+
+.arrow-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+@media (max-width: 768px) {
+    .plan-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .plan-card {
+        padding: 1rem;
+    }
+
+    .plan-price {
+        font-size: 1.75rem;
+    }
+
+    .submit-button {
+        width: 100%;
+        justify-content: center;
+    }
+}

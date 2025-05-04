@@ -1,0 +1,166 @@
+.subscription-creation {
+    width: 98%;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    height: 100%;
+    /*overflow-y: hidden;*/
+    overflow-x: hidden;
+}
+
+.subscription-container {
+    width: 100%;
+    padding: 5px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 400px);
+    overflow: hidden;
+}
+
+/* استایل عنوان */
+.subscription-creation h2 {
+    color: #6B42C6;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* استایل پیام */
+.subscription-creation p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 0px;
+    line-height: 1.5;
+}
+
+/* استایل لینک بازگشت */
+.back-link {
+    display: inline-block;
+    font-size: 14px;
+    color: #FFC450;
+    text-decoration: none;
+    /*border: 2px solid #4CAF50;*/
+    padding: 0px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0 auto;
+    text-align: center;
+    /*width: 300px;*/
+}
+
+.back-link:hover {
+    /*background-color: #4CAF50;*/
+    color: #2d3436;
+
+}
+
+.subscription-ff {
+    position: relative;
+    border: 2px solid #FFC450;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 1rem;
+    /*background: white;*/
+    overflow: hidden;
+    background-image: linear-gradient(
+    180deg,
+    hsl(36deg 92% 90%) 0%,
+    hsl(36deg 92% 91%) 8%,
+    hsl(36deg 93% 92%) 17%,
+    hsl(36deg 94% 93%) 25%,
+    hsl(36deg 94% 94%) 33%,
+    hsl(35deg 95% 94%) 42%,
+    hsl(35deg 96% 95%) 50%,
+    hsl(35deg 96% 96%) 58%,
+    hsl(35deg 97% 97%) 67%,
+    hsl(35deg 97% 98%) 75%,
+    hsl(35deg 98% 98%) 83%,
+    hsl(35deg 99% 99%) 92%,
+    hsl(0deg 0% 100%) 100%
+  );
+
+}
+
+
+.subscription-ff::after {
+    content: "اشتراک فعال";
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    transform: translateY(-50%) rotate(270deg);
+    font-size: 0.9rem;
+    color: #FFC450;
+    background-color: white;
+    padding: 5px 15px;
+    border: 2px solid #FFC450;
+    /*border-left: none;*/
+    border-radius: 25px;
+    white-space: nowrap;
+    z-index: 1;
+    display: flex;
+}
+
+/* رسپانسیو برای موبایل */
+@media (max-width: 768px) {
+    .subscription-ff {
+        margin: 0.5rem;
+        padding: 1.5rem;
+    }
+
+    .subscription-ff::after {
+        right: -12px;
+        font-size: 0.8rem;
+        padding: 4px 10px;
+        display: none;
+    }
+
+    .subscription-ff::before {
+        width: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .subscription-ff::after {
+        right: -15px;
+        font-size: 0.7rem;
+        padding: 3px 8px;
+    }
+
+    .subscription-ff h2 {
+        font-size: 1.2rem;
+    }
+
+    .subscription-ff p {
+        font-size: 0.9rem;
+    }
+}
+
+.subscription-ff h2 {
+    margin-top: 0;
+}
+
+/* تنظیمات رسپانسیو */
+@media (max-width: 768px) {
+    .subscription-creation {
+        padding: 20px;
+    }
+
+    .subscription-creation h2 {
+        font-size: 20px;
+    }
+
+    .subscription-creation p,
+    .back-link {
+        font-size: 14px;
+    }
+}

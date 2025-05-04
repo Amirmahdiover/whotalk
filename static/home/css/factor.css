@@ -1,0 +1,97 @@
+.factor-creation {
+    width: 98%;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 20px;
+    height: 100%;
+    /*overflow-y: hidden;*/
+    overflow-x: hidden;
+}
+
+.factor-container {
+    width: 100%;
+    padding: 5px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 400px);
+    overflow: hidden;
+}
+
+/* سبک جدید برای کارت‌های فاکتور در دسکتاپ (یک خط) */
+.factor-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-radius: 10px;
+	border: 2px solid transparent;
+	background: linear-gradient(#fff, #fff) padding-box, radial-gradient(#00C9A7, #845EC2) border-box;
+    margin-bottom: 15px;
+    flex-wrap: nowrap; /* نمایش یک‌خطی در دسکتاپ */
+}
+
+/* بخش عنوان فاکتور */
+.factor-card .factor-header {
+    flex: 1;
+}
+
+.factor-card .factor-header h3 {
+    font-size: 14px;
+    color: #6B42C6;
+    margin: 0;
+}
+
+/* بخش محتوای اصلی فاکتور */
+.factor-card .factor-body {
+    display: flex;
+    flex: 3;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.factor-card .factor-body p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.factor-card .factor-body p strong {
+    color: #333;
+}
+
+/* حالت رسپانسیو موبایل: نمایش چند خطی بدون اسکرول داخلی */
+@media (max-width: 768px) {
+    .factor-card {
+        flex-direction: column; /* نمایش عمودی */
+        align-items: flex-start;
+        /*overflow-x: visible; !* حذف اسکرول داخلی *!*/
+    }
+
+    .factor-card .factor-body {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        width: 100%;
+    }
+
+    .factor-card .factor-header h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .factor-card .factor-body p {
+        font-size: 13px;
+        width: 100%;
+    }
+}
