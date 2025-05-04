@@ -137,7 +137,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-LANGUAGE_CODE = 'fa-IR'
+LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'Asia/Tehran'
 
@@ -182,3 +182,4 @@ ZARINPAL_WEBSERVICE = "https://www.zarinpal.com/pg/services/WebGate/wsdl"
 # EMAIL_HOST_USER = 'nd@hesaa.me'
 # EMAIL_HOST_PASSWORD = '2002350Mh'
 # DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+CELERY_TASK_ALWAYS_EAGER = True

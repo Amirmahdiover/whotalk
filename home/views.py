@@ -96,7 +96,9 @@ def convert_to_jalali(dt, date_format="%Y/%m/%d ساعت %H:%M"):
 
 
 class CompanyAPIKeyAuthentication(BaseAuthentication):
+    
     def authenticate(self, request):
+        
         auth_header = request.headers.get("Authorization")
         if not auth_header:
             return None
@@ -134,16 +136,16 @@ class CompanyAPIKeyAuthentication(BaseAuthentication):
 class MessageListView(APIView):
     authentication_classes = [CompanyAPIKeyAuthentication]
     permission_classes = [IsAuthenticated]
-    openai.api_key = "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"
-
+    openai.api_key = "sk-proj-MCElNi8zbS3vZeIKKMELijijijR32YZ6dUaRZjhiPxb50ttOiNdsadsadCwsmA5yZ74zKghCb9hO0B-YkUn79JMT3BlbkFJ7ZOK-caESNohudPrBDaVvIp5ymbSR3gK9k6v2LBRJNhFxMpb0RSsaxJ0mQqhwrdht7pLYeLNMA"
     def get(self, request):
         # Get today's date
+        
         today = now().replace(hour=0, minute=0, second=0, microsecond=0)
 
         # Get sender and number from query parameters
         msg_sender = request.query_params.get('msg_sender')
         msg_sender_number = request.query_params.get('msg_sender_number')
-
+        
         if not msg_sender or not msg_sender_number:
             return Response({"error": "msg_sender and msg_sender_number are required."},
                             status=status.HTTP_400_BAD_REQUEST)
@@ -153,11 +155,11 @@ class MessageListView(APIView):
 
         # Get welcome message and admin image
         welcome_message = company.welcome_message or "به پشتیبانی خوش آمدید!"
-        adminImg = request.user.image.url
+        adminImg = request.user.image.url 
 
         # Separate messages by received=True and received=False
         received_true_messages = Meesages.objects.filter(
-            Q(create__gte=today) &
+            # Q(create__gte=today) &
             Q(received=True) &
             Q(company=company) &  # Filter by company
             (
@@ -194,10 +196,16 @@ class MessageListView(APIView):
                 message_data["company"] = message.company.name if message.company else None
                 messages_data.append(message_data)
             return messages_data
+        print("Sender:", msg_sender)
+        print("Sender Number:", msg_sender_number)
+        print("Company:", request.company.name)
+        print("User:", request.user.username)
+        print("True messages count:", received_true_messages.count())
+        print("False messages count:", received_false_messages.count())
 
         received_true_serialized = serialize_messages(received_true_messages)
         received_false_serialized = serialize_messages(received_false_messages)
-
+        print("🔑")
         return Response({
             "welcome": welcome_message,
             "admin_img": adminImg,
@@ -214,7 +222,7 @@ class MessageListView(APIView):
             return Response({"message": "Message marked as received successfully."}, status=200)
         except Meesages.DoesNotExist:
             return Response({"error": "Message not found."}, status=404)
-
+    print("1")
     def post(self, request):
         # print(request.data)
         data = request.data.copy()
@@ -284,7 +292,7 @@ class MessageListView(APIView):
                 "company": message.company.name if message.company else None,
                 "msgFile": message.msgFile.url if message.msgFile else None
             }, status=status.HTTP_201_CREATED)
-
+        print("🔑")
         return Response(
             {"error": "Validation failed", "details": serializer.errors},
             status=status.HTTP_400_BAD_REQUEST

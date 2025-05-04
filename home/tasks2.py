@@ -89,10 +89,8 @@ def process_message(message_id, file_data=None, file_name=None):
                 faq_context = "\n\n".join([f"Q: {item['question']}\nA: {item['answer']}" for item in top_faqs])
                 prompt = f"شما یک ربات پشتیبانی حرفه‌ای برای برند {company.name} هستید. با استفاده از اطلاعات زیر به سوالات کاربران پاسخ دهید.\n\n{faq_context}\n\nسوال کاربر: {user_question}"
 
-
-
                 response = openai.ChatCompletion.create(
-                    model="gpt-4o-mini",
+                    model="gpt-4o",
                     messages=[
                         {"role": "system", "content": "شما یک دستیار پشتیبانی هستید."},
                         {"role": "user", "content": prompt}
