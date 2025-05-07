@@ -28,7 +28,7 @@ from rest_framework.authentication import BaseAuthentication
 from rest_framework.exceptions import AuthenticationFailed
 from .models import Company, Token
 from datetime import datetime
-from .tasks import process_message
+from ai_utils.tasks import process_message
 from urllib.parse import urlparse
 from django.core.mail import send_mail
 from django.conf import settings
@@ -41,6 +41,11 @@ import logging
 import uuid
 from suds.client import Client
 from .models import SubscriptionPlan, PaymentTransaction, UserSubscription
+import pandas as pd
+import faiss
+import numpy as np
+import re 
+
 
 logger = logging.getLogger(__name__)
 
@@ -765,56 +770,6 @@ def get_user_ip(request):
     # Return the IP address in JSON format
     return JsonResponse({'ip': ip})
 
-
-@login_required(login_url='../login/')
-def create_company(request):
-    if request.method == 'POST':
-        if 'delete_company_id' in request.POST:  # حذف شرکت
-            company_id = request.POST.get('delete_company_id')
-            try:
-                company = Company.objects.get(id=company_id, owner=request.user)
-                company.delete()
-                return redirect('home:create_company')  # هدایت به صفحه داشبورد پس از حذف
-            except Company.DoesNotExist:
-                messages.error(request, 'شرکت یافت نشد یا شما مجاز به حذف آن نیستید.')
-        else:  # ایجاد یا ویرایش شرکت
-            company_id = request.POST.get('company_id')
-
-            form = CompanyForm(request.POST, request.FILES)
-            if form.is_valid():
-                name = form.cleaned_data['name']
-                website = form.cleaned_data['website']
-                faq_company = form.cleaned_data.get('faq_company', None)
-                welcome_message = form.cleaned_data.get('welcome_message', '')
-
-                if company_id:  # ویرایش شرکت
-                    company = Company.objects.get(id=company_id, owner=request.user)
-                    company.name = name
-                    company.website = website
-                    if faq_company:
-                        if company.faq:  # اگر فایل قبلی موجود است
-                            company.faq.delete()  # حذف فایل از سرور
-                        company.faq = faq_company  # جایگزینی فایل جدید
-                    company.welcome_message = welcome_message
-                    company.save()
-                else:  # ایجاد شرکت جدید
-                    company = Company.objects.create(
-                        name=name,
-                        website=website,
-                        faq=faq_company,
-                        welcome_message=welcome_message,
-                        owner=request.user
-                    )
-                    company.generate_api_key()  # تولید کلید API
-                    company.save()
-
-                return redirect('home:create_company')  # هدایت به صفحه داشبورد
-
-    else:
-        form = CompanyForm()
-
-    companies = Company.objects.filter(owner=request.user)
-    return render(request, 'admin/create_company.html', {'form': form, 'companies': companies})
 
 
 # get all messages sent by user to admin

@@ -3,6 +3,7 @@ from django.conf.urls.static import static
 from django.conf import settings
 from . import views
 from .views import UploadFAQView, MessageListView
+from .views_dir.create_company import create_company
 
 app_name = 'home'
 
@@ -49,7 +50,7 @@ urlpatterns = [
     # get user's company
     path('get-company-from-api-key/', views.get_company_from_api_key, name='get_company_from_api_key'),
     # Create Company
-    path('create-company/', views.create_company, name='create_company'),
+    path('create-company/', create_company, name='create_company'),
     # Welcome Message
     path('welcome-message/', views.welcome_message, name='welcome-message'),
     path('check-response/<int:message_id>/', views.check_response, name='check_response'),

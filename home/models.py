@@ -88,6 +88,7 @@ class Meesages(models.Model):
     msgFile = models.FileField(upload_to='file_msg_uploaded', blank=True, null=True)
     company = models.ForeignKey(Company, on_delete=models.CASCADE, related_name='messages', null=True,
                                 blank=True)  # Link to a company
+    question_embedding=models.JSONField(null=True, blank=True)
 
     def __str__(self):
         return f'From {self.msg_sender} to {self.msg_receiver} (Company: {self.company.name if self.company else "N/A"}) ===> {self.text}'
