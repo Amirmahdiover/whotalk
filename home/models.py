@@ -16,7 +16,8 @@ class Company(models.Model):
     website = models.URLField(max_length=255, blank=True, null=True)  # Website URL of the company
     welcome_message = models.TextField(blank=True, null=True)  # Welcome message field
     created_at = models.DateTimeField(auto_now_add=True)  # Company creation time
-
+    faq_embeddings = models.BinaryField(blank=True, null=True)
+    faq_json = models.JSONField(blank=True, null=True)
     def generate_api_key(self):
         """
         Generate a unique API key for the company, tied to the owner's token.

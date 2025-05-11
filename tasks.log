@@ -13486,3 +13486,1887 @@ UnboundLocalError: cannot access local variable 'company' where it is not associ
 2025-05-07 21:33:58,692 - 3 0.00 seconds
 2025-05-07 21:34:00,156 - 4 1.46 seconds
 2025-05-07 21:34:00,167 - Task home.tasks.process_message[17c8ee55-1061-473f-af01-abccb31a85a3] succeeded in 3.062000000005355s: None
+2025-05-07 21:38:04,259 - 1 0.00 seconds
+2025-05-07 21:38:05,211 - 2 0.95 seconds
+2025-05-07 21:38:05,212 - 3 0.00 seconds
+2025-05-07 21:38:06,082 - 4 0.87 seconds
+2025-05-07 21:38:06,095 - Task ai_utils.tasks.process_message[568d84c7-96c1-42c9-b927-6ed08a0a7d1e] succeeded in 1.8280000000086147s: None
+2025-05-08 18:15:15,714 - Not Found: /favicon.ico
+2025-05-08 18:16:20,261 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 84, in create_company
+    save_faq_embeddings_for_company(company, faq_company)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 54, in save_faq_embeddings_for_company
+    company.save()
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 1125, in _save_table
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\fields\files.py", line 327, in pre_save
+    if file.name is None and file._file is not None:
+       ^^^^^^^^^
+AttributeError: 'list' object has no attribute 'name'
+2025-05-08 18:16:46,855 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\admin.py changed, reloading.
+2025-05-08 18:17:33,038 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 84, in create_company
+    save_faq_embeddings_for_company(company, faq_company)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 54, in save_faq_embeddings_for_company
+    company.save()
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 1125, in _save_table
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\fields\files.py", line 327, in pre_save
+    if file.name is None and file._file is not None:
+       ^^^^^^^^^
+AttributeError: 'list' object has no attribute 'name'
+2025-05-08 18:17:37,984 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 84, in create_company
+    save_faq_embeddings_for_company(company, faq_company)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 54, in save_faq_embeddings_for_company
+    company.save()
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 1125, in _save_table
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\fields\files.py", line 327, in pre_save
+    if file.name is None and file._file is not None:
+       ^^^^^^^^^
+AttributeError: 'list' object has no attribute 'name'
+2025-05-08 18:20:13,557 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-08 18:20:17,573 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-08 18:29:17,207 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\models.py changed, reloading.
+2025-05-08 18:30:59,301 - Internal Server Error: /admin/home/faqembedding/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: home_faqembedding.faq
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\admin\options.py", line 2034, in changelist_view
+    response = self.response_action(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1666, in response_action
+    response = func(self, request, queryset)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\admin\actions.py", line 39, in delete_selected
+    ) = modeladmin.get_deleted_objects(queryset, request)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\admin\options.py", line 2176, in get_deleted_objects
+    return get_deleted_objects(objs, request, self.admin_site)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 132, in get_deleted_objects
+    obj = objs[0]
+          ~~~~^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\query.py", line 451, in __getitem__
+    qs._fetch_all()
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: home_faqembedding.faq
+2025-05-08 18:31:01,592 - Internal Server Error: /admin/home/faqembedding/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: home_faqembedding.faq
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\admin\options.py", line 2034, in changelist_view
+    response = self.response_action(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1666, in response_action
+    response = func(self, request, queryset)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\admin\actions.py", line 39, in delete_selected
+    ) = modeladmin.get_deleted_objects(queryset, request)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\admin\options.py", line 2176, in get_deleted_objects
+    return get_deleted_objects(objs, request, self.admin_site)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 132, in get_deleted_objects
+    obj = objs[0]
+          ~~~~^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\query.py", line 451, in __getitem__
+    qs._fetch_all()
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: home_faqembedding.faq
+2025-05-08 18:33:42,685 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 84, in create_company
+    save_faq_embeddings_for_company(company, faq_company)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 26, in save_faq_embeddings_for_company
+    company.faq_embeddings.all().delete()
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 531, in __get__
+    raise self.RelatedObjectDoesNotExist(
+home.models.Company.faq_embeddings.RelatedObjectDoesNotExist: Company has no faq_embeddings.
+2025-05-08 18:35:38,844 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-08 18:35:54,176 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-08 18:35:58,684 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 84, in create_company
+    save_faq_embeddings_for_company(company, faq_company)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 26, in save_faq_embeddings_for_company
+    company.faq_embeddings.all().delete()
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 531, in __get__
+    raise self.RelatedObjectDoesNotExist(
+home.models.Company.faq_embeddings.RelatedObjectDoesNotExist: Company has no faq_embeddings.
+2025-05-08 18:36:07,091 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-08 18:36:09,772 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 84, in create_company
+    save_faq_embeddings_for_company(company, faq_company)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 26, in save_faq_embeddings_for_company
+    company.faq_embeddings.all().delete()
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 531, in __get__
+    raise self.RelatedObjectDoesNotExist(
+home.models.Company.faq_embeddings.RelatedObjectDoesNotExist: Company has no faq_embeddings.
+2025-05-08 18:36:28,888 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 84, in create_company
+    save_faq_embeddings_for_company(company, faq_company)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 26, in save_faq_embeddings_for_company
+    company.faq_embeddings.all().delete()
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 531, in __get__
+    raise self.RelatedObjectDoesNotExist(
+home.models.Company.faq_embeddings.RelatedObjectDoesNotExist: Company has no faq_embeddings.
+2025-05-08 18:38:06,376 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-08 18:38:35,021 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: home_faqembedding.company_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 84, in create_company
+    save_faq_embeddings_for_company(company, faq_company)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 46, in save_faq_embeddings_for_company
+    FAQEmbedding.objects.bulk_create(embedding_objects)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\query.py", line 835, in bulk_create
+    returned_columns = self._batched_insert(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\query.py", line 1875, in _batched_insert
+    self._insert(
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: home_faqembedding.company_id
+2025-05-08 18:40:50,695 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\models.py changed, reloading.
+2025-05-08 18:45:03,232 - Not Found: /admin/home/faqembedding/
+2025-05-08 18:51:04,429 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-08 18:51:16,468 - Task ai_utils.tasks.process_message[8dff05b8-fbbe-4f11-831d-fb0b5270d916] succeeded in 0.014999999984866008s: None
+2025-05-08 20:00:48,047 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-08 20:00:58,876 - Task ai_utils.tasks.process_message[85f299ed-8832-40b8-9754-46dd48006db1] succeeded in 0.01600000000325963s: None
+2025-05-08 20:02:16,693 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-08 20:02:20,911 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-08 20:03:17,594 - Task ai_utils.tasks.process_message[06f2accf-570c-4a0f-8b7b-963588482a61] succeeded in 0.014999999984866008s: None
+2025-05-08 20:03:55,023 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-08 20:04:31,050 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-08 20:05:16,821 - Task ai_utils.tasks.process_message[0a3429be-2f20-4a68-8789-8f19cb846df6] succeeded in 0.01600000000325963s: None
+2025-05-08 20:09:57,626 - Task ai_utils.tasks.process_message[7f25fd30-56ef-48bb-bd9e-b92747ce6e43] succeeded in 0.0s: None
+2025-05-08 20:10:40,401 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-08 20:11:42,832 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-08 20:12:30,992 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-08 20:12:41,615 - Task ai_utils.tasks.process_message[2a505de2-4b0c-4090-9082-689695a007a0] succeeded in 0.0s: None
+2025-05-08 20:17:18,437 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-08 20:17:24,110 - Task ai_utils.tasks.process_message[7be53134-c401-4935-8956-5460d03f7a9e] succeeded in 0.01600000000325963s: None
+2025-05-08 20:19:03,502 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-08 20:19:17,078 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-08 20:19:25,337 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-08 20:19:37,854 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-08 20:22:08,453 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-08 20:22:16,816 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-08 20:22:19,283 - Task ai_utils.tasks.process_message[6214fdb3-57ef-49e3-93ef-3fae090dac5c] succeeded in 0.0159999999741558s: None
+2025-05-08 20:29:02,434 - Forbidden (CSRF token from the 'X-Csrftoken' HTTP header incorrect.): /admin-message/
+2025-05-08 20:29:30,850 - Task ai_utils.tasks.process_message[6547066a-87f4-413a-84e2-32539a1cf734] succeeded in 0.0s: None
+2025-05-08 20:30:27,484 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-08 20:30:45,327 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-08 20:31:04,195 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-08 20:31:50,286 - Task ai_utils.tasks.process_message[1d747cf9-e906-4a1b-8cb5-7b3d80d1364f] succeeded in 0.0s: None
+2025-05-08 20:32:30,789 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-08 20:32:36,757 - Task ai_utils.tasks.process_message[24e0dbae-3b9f-4142-9c3a-6ea7b330e265] succeeded in 0.0s: None
+2025-05-08 20:34:06,303 - Task ai_utils.tasks.process_message[afbf60e0-21f5-42ce-8538-54abc727c086] succeeded in 0.0s: None
+2025-05-08 20:48:43,350 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views.py changed, reloading.
+2025-05-08 20:49:04,737 - Task ai_utils.tasks.process_message[978dd9fa-5828-47cd-a4f2-e945b4af4be5] succeeded in 0.01600000000325963s: None
+2025-05-09 10:25:14,802 - Not Found: /favicon.ico
+2025-05-09 10:25:22,018 - Task ai_utils.tasks.process_message[998c63ea-a759-46d6-821b-0300f114421b] succeeded in 0.031000000017229468s: None
+2025-05-09 10:27:20,821 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views.py changed, reloading.
+2025-05-09 10:57:04,210 - Not Found: /get-company-from-api-key/
+2025-05-09 10:57:33,301 - Not Found: /get-company-from-api-key/
+2025-05-09 10:58:03,260 - Not Found: /get-company-from-api-key/
+2025-05-09 11:00:33,002 - Not Found: /get-company-from-api-key/
+2025-05-09 12:10:44,190 - Not Found: /get-company-from-api-key/
+2025-05-09 12:10:46,403 - Not Found: /get-company-from-api-key/
+2025-05-09 12:11:19,123 - Not Found: /get-company-from-api-key/
+2025-05-09 12:13:55,685 - Not Found: /get-company-from-api-key/
+2025-05-09 12:14:04,689 - Internal Server Error: /get-company-from-api-key/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views.py", line 351, in get_company_from_api_key
+    data = json.loads(request.body)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-05-09 12:24:26,719 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 84, in create_company
+    save_faq_embeddings_for_company(company, faq_company)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 18, in save_faq_embeddings_for_company
+    faq_excel = pd.read_excel(faq_file)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 1550, in __init__
+    ext = inspect_excel_format(
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 1402, in inspect_excel_format
+    with get_handle(
+         ^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\common.py", line 728, in get_handle
+    ioargs = _get_filepath_or_buffer(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\common.py", line 472, in _get_filepath_or_buffer
+    raise ValueError(msg)
+ValueError: Invalid file path or buffer object type: <class 'NoneType'>
+2025-05-09 12:36:14,518 - Not Found: /get-company-from-api-key/
+2025-05-09 12:37:04,670 - Internal Server Error: /connect/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views.py", line 370, in connection
+    admin = User.objects.get(is_staff=True, name=data['admin'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+account.models.User.MultipleObjectsReturned: get() returned more than one User -- it returned 2!
+2025-05-09 12:37:17,456 - Internal Server Error: /connect/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views.py", line 363, in connection
+    data = json.loads(request.body)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-05-09 12:38:07,813 - Internal Server Error: /connect/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views.py", line 370, in connection
+    admin = User.objects.get(is_staff=True, name=data['admin'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+account.models.User.MultipleObjectsReturned: get() returned more than one User -- it returned 2!
+2025-05-09 12:40:01,103 - Internal Server Error: /connect/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views.py", line 390, in connection
+    return JsonResponse({'connection': 'connect', 'admin': str(admin.name), 'admin_url': admin.image.url,
+                                                                                         ^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\files.py", line 69, in url
+    self._require_file()
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\files.py", line 44, in _require_file
+    raise ValueError(
+ValueError: The 'image' attribute has no file associated with it.
+2025-05-09 12:40:10,640 - Internal Server Error: /connect/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views.py", line 384, in connection
+    return JsonResponse({'connection': 'isThere', 'admin': str(admin.name), 'admin_url': admin.image.url,
+                                                                                         ^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\files.py", line 69, in url
+    self._require_file()
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\files.py", line 44, in _require_file
+    raise ValueError(
+ValueError: The 'image' attribute has no file associated with it.
+2025-05-09 12:42:04,852 - Internal Server Error: /get-company-from-api-key/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views.py", line 351, in get_company_from_api_key
+    data = json.loads(request.body)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-05-09 12:42:05,444 - Internal Server Error: /connect/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views.py", line 363, in connection
+    data = json.loads(request.body)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-05-09 12:42:53,652 - Internal Server Error: /connect/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views.py", line 384, in connection
+    return JsonResponse({'connection': 'isThere', 'admin': str(admin.name), 'admin_url': admin.image.url,
+                                                                                         ^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\files.py", line 69, in url
+    self._require_file()
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\files.py", line 44, in _require_file
+    raise ValueError(
+ValueError: The 'image' attribute has no file associated with it.
+2025-05-09 12:51:24,120 - Internal Server Error: /connect/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views.py", line 384, in connection
+    return JsonResponse({'connection': 'isThere', 'admin': str(admin.name), 'admin_url': admin.image.url,
+                                                                                         ^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\files.py", line 69, in url
+    self._require_file()
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\files.py", line 44, in _require_file
+    raise ValueError(
+ValueError: The 'image' attribute has no file associated with it.
+2025-05-09 12:54:13,489 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views.py changed, reloading.
+2025-05-09 12:54:21,920 - Internal Server Error: /connect/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views.py", line 384, in connection
+    return JsonResponse({'connection': 'isThere', 'admin': str(admin.name), 'admin_url': admin.image.url,
+                                                                                         ^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\files.py", line 69, in url
+    self._require_file()
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\files.py", line 44, in _require_file
+    raise ValueError(
+ValueError: The 'image' attribute has no file associated with it.
+2025-05-09 12:54:38,619 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views.py changed, reloading.
+2025-05-09 12:54:45,134 - Internal Server Error: /connect/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views.py", line 384, in connection
+    return JsonResponse({'connection': 'isThere', 'admin': str(admin.name), 'admin_url': admin.image.url,
+                                                                                         ^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\files.py", line 69, in url
+    self._require_file()
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\files.py", line 44, in _require_file
+    raise ValueError(
+ValueError: The 'image' attribute has no file associated with it.
+2025-05-09 12:55:46,764 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views.py changed, reloading.
+2025-05-09 12:55:50,619 - Internal Server Error: /connect/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views.py", line 385, in connection
+    return JsonResponse({'connection': 'isThere', 'admin': str(admin.name), 'admin_url': admin.image.url,
+                                                                                         ^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\files.py", line 69, in url
+    self._require_file()
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\fields\files.py", line 44, in _require_file
+    raise ValueError(
+ValueError: The 'image' attribute has no file associated with it.
+2025-05-09 12:57:36,435 - Task ai_utils.tasks.process_message[20db54df-56b7-4dba-90f3-903dd9c2135d] succeeded in 0.1559999999590218s: None
+2025-05-09 13:02:51,523 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-09 13:03:00,801 - Task ai_utils.tasks.process_message[98aa37cf-7550-4101-aa2f-1e00ec1a61bc] succeeded in 0.13999999995576218s: None
+2025-05-09 13:07:03,351 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 61, in create_company
+    old_faq_serialized = json.dumps(company.faq, sort_keys=True)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type FieldFile is not JSON serializable
+2025-05-09 13:08:11,260 - Task ai_utils.tasks.process_message[b27e5670-24ed-4034-a804-54c81c88a143] succeeded in 0.10999999998603016s: None
+2025-05-09 13:08:38,479 - Task ai_utils.tasks.process_message[cc01ab0d-98cd-4b03-abca-c92ca9f19b06] succeeded in 0.10899999999674037s: None
+2025-05-09 13:11:06,398 - Task ai_utils.tasks.process_message[dc271104-b5d6-4f71-86a8-3560148ff7e8] succeeded in 0.10899999999674037s: None
+2025-05-10 11:25:42,412 - Not Found: /favicon.ico
+2025-05-10 11:25:51,421 - Task ai_utils.tasks.process_message[d1e99c25-7533-42f9-a341-dcd529a9d6d8] succeeded in 0.125s: None
+2025-05-10 11:28:10,965 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-10 11:28:18,975 - Task ai_utils.tasks.process_message[307540e3-9610-4605-a277-0ecb94bb07b5] succeeded in 0.015000000013969839s: None
+2025-05-10 11:28:37,160 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-10 11:28:45,960 - Task ai_utils.tasks.process_message[e30aaf36-1b27-4acc-982a-cfbf42c82a3e] succeeded in 0.01600000000325963s: None
+2025-05-10 11:31:11,481 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-10 11:31:19,018 - 1 0.27 seconds
+2025-05-10 11:31:19,381 - error_code=unsupported_country_region_territory error_message='Country, region, or territory not supported' error_param=None error_type=request_forbidden message='OpenAI API error received' stream_error=False
+2025-05-10 11:31:19,393 - Task ai_utils.tasks.process_message[0eb9c79e-03e4-4eb0-a782-46a5489325e2] succeeded in 0.6560000000172295s: None
+2025-05-10 11:31:49,827 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-10 11:31:57,300 - 1 0.19 seconds
+2025-05-10 11:31:57,647 - error_code=unsupported_country_region_territory error_message='Country, region, or territory not supported' error_param=None error_type=request_forbidden message='OpenAI API error received' stream_error=False
+2025-05-10 11:31:57,660 - Task ai_utils.tasks.process_message[af423569-b0d1-4c52-b1e7-543c82d41fbe] succeeded in 0.5470000000204891s: None
+2025-05-10 11:32:21,725 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-10 11:32:31,922 - 1 0.17 seconds
+2025-05-10 11:32:32,411 - error_code=unsupported_country_region_territory error_message='Country, region, or territory not supported' error_param=None error_type=request_forbidden message='OpenAI API error received' stream_error=False
+2025-05-10 11:32:32,423 - Task ai_utils.tasks.process_message[4660f789-0cd0-42f3-9925-b77c578cd029] succeeded in 0.6709999999729916s: None
+2025-05-10 11:32:54,534 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-10 11:33:38,560 - 1 0.18 seconds
+2025-05-10 11:33:39,540 - 2 0.98 seconds
+2025-05-10 11:33:39,541 - 3 0.00 seconds
+2025-05-10 11:33:40,839 - 4 1.30 seconds
+2025-05-10 11:33:40,851 - Task ai_utils.tasks.process_message[a9f51b54-4c75-4a25-9559-d33beb853a0b] succeeded in 2.4679999999934807s: None
+2025-05-10 11:33:52,867 - 1 0.01 seconds
+2025-05-10 11:33:53,220 - 2 0.35 seconds
+2025-05-10 11:33:53,221 - 3 0.00 seconds
+2025-05-10 11:33:53,992 - 4 0.77 seconds
+2025-05-10 11:33:53,992 - Task ai_utils.tasks.process_message[7145965e-21cf-4d79-9b42-799ba139cf04] succeeded in 1.125s: None
+2025-05-10 11:34:47,601 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-10 11:35:00,377 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-10 11:35:30,127 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-10 11:37:17,870 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-10 11:37:25,278 - 0.1 0.19 seconds
+2025-05-10 11:37:25,279 - 1 0.00 seconds
+2025-05-10 11:37:27,046 - 4 1.77 seconds
+2025-05-10 11:37:27,062 - Task ai_utils.tasks.process_message[7021f011-996f-443d-a57e-44c68e16dae1] succeeded in 1.9689999999827705s: None
+2025-05-10 11:37:58,859 - 0.1 0.01 seconds
+2025-05-10 11:37:58,859 - 1 0.00 seconds
+2025-05-10 11:38:01,321 - 4 2.46 seconds
+2025-05-10 11:38:01,321 - Task ai_utils.tasks.process_message[e2ab6a36-c200-460b-8ad5-c6cb764f3190] succeeded in 2.4689999999827705s: None
+2025-05-10 11:38:45,154 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-10 11:38:49,296 - 0.1 0.20 seconds
+2025-05-10 11:38:49,296 - 1 0.00 seconds
+2025-05-10 11:38:50,399 - 2 1.10 seconds
+2025-05-10 11:38:53,153 - 4 2.75 seconds
+2025-05-10 11:38:53,165 - Task ai_utils.tasks.process_message[537f851d-d545-4732-9e54-720b6d7c13bb] succeeded in 4.063000000023749s: None
+2025-05-10 11:39:25,843 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-10 11:39:31,408 - 0.01 0.00 seconds
+2025-05-10 11:39:31,586 - 0.1 0.18 seconds
+2025-05-10 11:39:31,587 - 1 0.00 seconds
+2025-05-10 11:39:32,796 - 2 1.21 seconds
+2025-05-10 11:39:34,870 - 4 2.07 seconds
+2025-05-10 11:39:34,882 - Task ai_utils.tasks.process_message[8530f169-27b8-4c1a-b7cb-0e03ab673921] succeeded in 3.4689999999827705s: None
+2025-05-10 11:40:47,770 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-10 11:41:35,504 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 84, in create_company
+    save_faq_embeddings_for_company(company, faq_company)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 42, in save_faq_embeddings_for_company
+    company.save()
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 1125, in _save_table
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\fields\files.py", line 327, in pre_save
+    if file.name is None and file._file is not None:
+       ^^^^^^^^^
+AttributeError: 'list' object has no attribute 'name'
+2025-05-10 11:42:35,229 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\models.py changed, reloading.
+2025-05-10 11:44:13,328 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 61, in create_company
+    old_faq_serialized = json.dumps(company.faq, sort_keys=True)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type FieldFile is not JSON serializable
+2025-05-10 11:53:31,130 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-10 11:53:53,746 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 97, in create_company
+    save_faq_embeddings_for_company(company, faq_company)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 40, in save_faq_embeddings_for_company
+    company.faq_embeddings = np.stack(embedding_objects).tobytes()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\numpy\_core\shape_base.py", line 456, in stack
+    raise ValueError('need at least one array to stack')
+ValueError: need at least one array to stack
+2025-05-10 11:55:23,448 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-10 11:55:33,528 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 100, in create_company
+    save_faq_embeddings_for_company(company, faq_company)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 40, in save_faq_embeddings_for_company
+    company.faq_embeddings = np.stack(embedding_objects).tobytes()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\numpy\_core\shape_base.py", line 456, in stack
+    raise ValueError('need at least one array to stack')
+ValueError: need at least one array to stack
+2025-05-10 11:55:58,523 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-10 11:56:15,176 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 100, in create_company
+    save_faq_embeddings_for_company(company, faq_company)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 40, in save_faq_embeddings_for_company
+    company.faq_embeddings = np.stack(embedding_objects).tobytes()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\numpy\_core\shape_base.py", line 456, in stack
+    raise ValueError('need at least one array to stack')
+ValueError: need at least one array to stack
+2025-05-10 11:56:31,160 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-10 11:56:55,329 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 100, in create_company
+    save_faq_embeddings_for_company(company, faq_company)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 42, in save_faq_embeddings_for_company
+    company.save()
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 1125, in _save_table
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\fields\files.py", line 327, in pre_save
+    if file.name is None and file._file is not None:
+       ^^^^^^^^^
+AttributeError: 'list' object has no attribute 'name'
+2025-05-10 11:57:43,928 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-10 11:58:47,789 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 100, in create_company
+    save_faq_embeddings_for_company(company, faq_company)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 42, in save_faq_embeddings_for_company
+    company.save()
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 1125, in _save_table
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\fields\files.py", line 327, in pre_save
+    if file.name is None and file._file is not None:
+       ^^^^^^^^^
+AttributeError: 'list' object has no attribute 'name'
+2025-05-10 12:04:29,304 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-10 12:04:56,132 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 100, in create_company
+    save_faq_embeddings_for_company(company, faq_company)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 42, in save_faq_embeddings_for_company
+    company.save()
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 1125, in _save_table
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\fields\files.py", line 327, in pre_save
+    if file.name is None and file._file is not None:
+       ^^^^^^^^^
+AttributeError: 'list' object has no attribute 'name'
+2025-05-10 12:05:06,080 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 100, in create_company
+    save_faq_embeddings_for_company(company, faq_company)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 42, in save_faq_embeddings_for_company
+    company.save()
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 1125, in _save_table
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\fields\files.py", line 327, in pre_save
+    if file.name is None and file._file is not None:
+       ^^^^^^^^^
+AttributeError: 'list' object has no attribute 'name'
+2025-05-10 12:08:32,053 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-10 12:08:49,471 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 101, in create_company
+    save_faq_embeddings_for_company(company, faq_company)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 42, in save_faq_embeddings_for_company
+    company.save()
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 1125, in _save_table
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\fields\files.py", line 327, in pre_save
+    if file.name is None and file._file is not None:
+       ^^^^^^^^^
+AttributeError: 'list' object has no attribute 'name'
+2025-05-10 12:08:54,503 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-10 12:09:02,905 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 101, in create_company
+    save_faq_embeddings_for_company(company, faq_company)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 42, in save_faq_embeddings_for_company
+    company.save()
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 1125, in _save_table
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\fields\files.py", line 327, in pre_save
+    if file.name is None and file._file is not None:
+       ^^^^^^^^^
+AttributeError: 'list' object has no attribute 'name'
+2025-05-10 12:10:06,658 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-10 12:12:26,579 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-10 12:15:48,171 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-10 12:16:20,787 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-10 12:16:26,845 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 103, in create_company
+    save_faq_embeddings_for_company(company, faq_company)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 18, in save_faq_embeddings_for_company
+    faq_excel = pd.read_excel(faq_file)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\pandas\io\excel\_base.py", line 1550, in __init__
+    ext = inspect_excel_format(
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\pandas\io\excel\_base.py", line 1402, in inspect_excel_format
+    with get_handle(
+         ^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\pandas\io\common.py", line 728, in get_handle
+    ioargs = _get_filepath_or_buffer(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\pandas\io\common.py", line 472, in _get_filepath_or_buffer
+    raise ValueError(msg)
+ValueError: Invalid file path or buffer object type: <class 'pandas.core.frame.DataFrame'>
+2025-05-10 12:17:18,884 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-10 12:17:24,838 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 103, in create_company
+    save_faq_embeddings_for_company(company, faq_company)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 18, in save_faq_embeddings_for_company
+    faq_excel = pd.read_excel(faq_file)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\pandas\io\excel\_base.py", line 1550, in __init__
+    ext = inspect_excel_format(
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\pandas\io\excel\_base.py", line 1402, in inspect_excel_format
+    with get_handle(
+         ^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\pandas\io\common.py", line 728, in get_handle
+    ioargs = _get_filepath_or_buffer(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\pandas\io\common.py", line 472, in _get_filepath_or_buffer
+    raise ValueError(msg)
+ValueError: Invalid file path or buffer object type: <class 'pandas.core.frame.DataFrame'>
+2025-05-10 12:20:11,455 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-10 12:20:29,907 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 103, in create_company
+    save_faq_embeddings_for_company(company, faq_company)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 28, in save_faq_embeddings_for_company
+    for item in faq_data:
+                ^^^^^^^^
+UnboundLocalError: cannot access local variable 'faq_data' where it is not associated with a value
+2025-05-10 12:22:07,479 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-10 12:22:19,678 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 19, in save_faq_embeddings_for_company
+    faq_excel = pd.read_excel(faq_file)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\pandas\io\excel\_base.py", line 1550, in __init__
+    ext = inspect_excel_format(
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\pandas\io\excel\_base.py", line 1402, in inspect_excel_format
+    with get_handle(
+         ^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\pandas\io\common.py", line 728, in get_handle
+    ioargs = _get_filepath_or_buffer(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\pandas\io\common.py", line 472, in _get_filepath_or_buffer
+    raise ValueError(msg)
+ValueError: Invalid file path or buffer object type: <class 'pandas.core.frame.DataFrame'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 103, in create_company
+    save_faq_embeddings_for_company(company, faq_company)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 25, in save_faq_embeddings_for_company
+    faq_data=faq_data
+             ^^^^^^^^
+UnboundLocalError: cannot access local variable 'faq_data' where it is not associated with a value
+2025-05-10 12:22:38,889 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-10 12:22:50,442 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 103, in create_company
+    save_faq_embeddings_for_company(company, faq_company)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 29, in save_faq_embeddings_for_company
+    question = item["question"].strip()
+               ~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2025-05-10 12:24:38,562 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-10 12:24:50,011 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-10 12:25:00,272 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 107, in create_company
+    save_faq_embeddings_for_company(company, faq_data)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 28, in save_faq_embeddings_for_company
+    for item in faq_data:
+                ^^^^^^^^
+NameError: name 'faq_data' is not defined
+2025-05-10 12:25:15,962 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-10 12:25:25,922 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 107, in create_company
+    save_faq_embeddings_for_company(company, faq_data)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 44, in save_faq_embeddings_for_company
+    company.save()
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 1125, in _save_table
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\fields\files.py", line 327, in pre_save
+    if file.name is None and file._file is not None:
+       ^^^^^^^^^
+AttributeError: 'list' object has no attribute 'name'
+2025-05-10 12:28:59,026 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-10 12:29:22,324 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 107, in create_company
+    save_faq_embeddings_for_company(company, faq_data)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 44, in save_faq_embeddings_for_company
+    company.save()
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 1125, in _save_table
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\fields\files.py", line 327, in pre_save
+    if file.name is None and file._file is not None:
+       ^^^^^^^^^
+AttributeError: 'list' object has no attribute 'name'
+2025-05-10 12:30:04,284 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-10 12:30:08,281 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-10 12:30:24,938 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 108, in create_company
+    save_faq_embeddings_for_company(company, faq_data)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 44, in save_faq_embeddings_for_company
+    company.save()
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 1125, in _save_table
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\fields\files.py", line 327, in pre_save
+    if file.name is None and file._file is not None:
+       ^^^^^^^^^
+AttributeError: 'list' object has no attribute 'name'
+2025-05-10 12:31:20,819 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-10 12:31:31,206 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-10 12:31:50,721 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 108, in create_company
+    save_faq_embeddings_for_company(company, faq_data)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 44, in save_faq_embeddings_for_company
+    company.save()
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 1125, in _save_table
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\fields\files.py", line 327, in pre_save
+    if file.name is None and file._file is not None:
+       ^^^^^^^^^
+AttributeError: 'list' object has no attribute 'name'
+2025-05-10 12:33:44,870 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-10 12:33:58,694 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 111, in create_company
+    save_faq_embeddings_for_company(company, faq_data)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 44, in save_faq_embeddings_for_company
+    company.save()
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 1125, in _save_table
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\fields\files.py", line 327, in pre_save
+    if file.name is None and file._file is not None:
+       ^^^^^^^^^
+AttributeError: 'list' object has no attribute 'name'
+2025-05-10 12:34:04,878 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 111, in create_company
+    save_faq_embeddings_for_company(company, faq_data)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 44, in save_faq_embeddings_for_company
+    company.save()
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 1125, in _save_table
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\fields\files.py", line 327, in pre_save
+    if file.name is None and file._file is not None:
+       ^^^^^^^^^
+AttributeError: 'list' object has no attribute 'name'
+2025-05-10 12:36:13,182 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-10 12:36:24,285 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 110, in create_company
+    save_faq_embeddings_for_company(company, faq_data)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 44, in save_faq_embeddings_for_company
+    company.save()
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 1125, in _save_table
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\fields\files.py", line 327, in pre_save
+    if file.name is None and file._file is not None:
+       ^^^^^^^^^
+AttributeError: 'list' object has no attribute 'name'
+2025-05-10 12:36:46,738 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-10 12:37:07,266 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 110, in create_company
+    save_faq_embeddings_for_company(company, faq_data)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 44, in save_faq_embeddings_for_company
+    company.save()
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 1125, in _save_table
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\fields\files.py", line 327, in pre_save
+    if file.name is None and file._file is not None:
+       ^^^^^^^^^
+AttributeError: 'list' object has no attribute 'name'
+2025-05-10 12:37:12,357 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-10 12:37:59,971 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-10 12:38:06,585 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 111, in create_company
+    save_faq_embeddings_for_company(company, faq_data)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 44, in save_faq_embeddings_for_company
+    company.save()
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 1125, in _save_table
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\fields\files.py", line 327, in pre_save
+    if file.name is None and file._file is not None:
+       ^^^^^^^^^
+AttributeError: 'list' object has no attribute 'name'
+2025-05-10 12:38:35,920 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-10 12:38:43,033 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-10 12:38:51,205 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-10 12:39:18,578 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-10 12:39:26,397 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 19, in save_faq_embeddings_for_company
+    faq_excel = pd.read_excel(faq_file)
+                              ^^^^^^^^
+NameError: name 'faq_file' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 107, in create_company
+    save_faq_embeddings_for_company(company, faq_company)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 25, in save_faq_embeddings_for_company
+    faq_data=faq_file
+             ^^^^^^^^
+NameError: name 'faq_file' is not defined
+2025-05-10 12:39:55,441 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-10 12:40:14,292 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-10 12:40:38,941 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 107, in create_company
+    save_faq_embeddings_for_company(company, faq_company)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 43, in save_faq_embeddings_for_company
+    company.save()
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\base.py", line 1125, in _save_table
+    (getattr(self, f.attname) if raw else f.pre_save(self, False)),
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\fields\files.py", line 327, in pre_save
+    if file.name is None and file._file is not None:
+       ^^^^^^^^^
+AttributeError: 'list' object has no attribute 'name'
+2025-05-10 12:40:53,608 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-10 12:41:24,518 - 0.01 0.00 seconds
+2025-05-10 12:41:24,518 - 0.1 0.00 seconds
+2025-05-10 12:41:24,529 - Task ai_utils.tasks.process_message[7312ba06-6d4b-4805-97e0-35b9b63ec80c] succeeded in 0.01600000000325963s: None
+2025-05-10 12:42:40,275 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-10 12:42:50,139 - 0.01 0.00 seconds
+2025-05-10 12:42:50,139 - 0.1 0.00 seconds
+2025-05-10 12:42:50,153 - Task ai_utils.tasks.process_message[85dbf957-7405-4013-bf25-57ec4cd240e0] succeeded in 0.0s: None
+2025-05-10 12:51:21,673 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-10 12:51:50,107 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-10 12:52:06,792 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-10 12:52:32,938 - 0.01 0.00 seconds
+2025-05-10 12:52:32,938 - 0.1 0.00 seconds
+2025-05-10 12:52:32,949 - Task ai_utils.tasks.process_message[c1408f7e-cd54-47a4-84c7-9e1c9c23e8bf] succeeded in 0.0s: None
+2025-05-10 12:54:59,521 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-10 12:55:24,904 - 0.01 0.00 seconds
+2025-05-10 12:55:24,904 - 0.1 0.00 seconds
+2025-05-10 12:55:24,904 - 1 0.00 seconds
+2025-05-10 12:55:25,421 - 2 0.52 seconds
+2025-05-10 12:55:26,684 - 4 1.26 seconds
+2025-05-10 12:55:26,695 - Task ai_utils.tasks.process_message[d30dc998-2800-47c6-9237-db2194843152] succeeded in 1.7969999999622814s: None
+2025-05-10 12:55:40,170 - 0.01 0.00 seconds
+2025-05-10 12:55:40,170 - 0.1 0.00 seconds
+2025-05-10 12:55:40,170 - 1 0.00 seconds
+2025-05-10 12:55:40,736 - 2 0.57 seconds
+2025-05-10 12:55:40,743 - 4 0.01 seconds
+2025-05-10 12:55:40,743 - Task ai_utils.tasks.process_message[b1469533-fc3e-4e20-8307-c3b40ce725de] succeeded in 0.5630000000237487s: None
+2025-05-10 12:59:08,394 - 0.01 0.00 seconds
+2025-05-10 12:59:08,394 - 0.1 0.00 seconds
+2025-05-10 12:59:08,394 - 1 0.00 seconds
+2025-05-10 12:59:09,050 - 2 0.66 seconds
+2025-05-10 12:59:09,056 - 4 0.01 seconds
+2025-05-10 12:59:09,056 - Task ai_utils.tasks.process_message[d109e4b6-d2b2-4c5c-b18a-cf1ac5ba7ca8] succeeded in 0.6559999999590218s: None
+2025-05-10 12:59:42,226 - 0.01 0.00 seconds
+2025-05-10 12:59:42,226 - 0.1 0.00 seconds
+2025-05-10 12:59:42,226 - 1 0.00 seconds
+2025-05-10 12:59:42,997 - 2 0.77 seconds
+2025-05-10 12:59:43,795 - 4 0.80 seconds
+2025-05-10 12:59:43,796 - Task ai_utils.tasks.process_message[0f29dbfe-d22a-4e41-8bc9-8ce3a05145c7] succeeded in 1.577999999979511s: None
+2025-05-10 13:00:08,246 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-10 13:00:30,501 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-10 13:02:11,558 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-10 13:02:23,587 - 0.01 0.00 seconds
+2025-05-10 13:02:23,588 - 0.1 0.00 seconds
+2025-05-10 13:02:23,588 - 1 0.00 seconds
+2025-05-10 13:02:23,982 - 2 0.39 seconds
+2025-05-10 13:02:24,680 - 4 0.70 seconds
+2025-05-10 13:02:24,695 - Task ai_utils.tasks.process_message[e33b2c41-6c88-4745-b2c7-e38105816420] succeeded in 1.1089999999967404s: None
+2025-05-10 13:03:08,955 - 0.01 0.00 seconds
+2025-05-10 13:03:08,955 - 0.1 0.00 seconds
+2025-05-10 13:03:08,955 - 1 0.00 seconds
+2025-05-10 13:03:09,726 - 2 0.77 seconds
+2025-05-10 13:03:11,603 - 4 1.88 seconds
+2025-05-10 13:03:11,603 - Task ai_utils.tasks.process_message[4b44d193-0cc4-44fe-abdb-796d5a1a571b] succeeded in 2.64000000001397s: None
+2025-05-10 13:03:36,842 - 0.01 0.00 seconds
+2025-05-10 13:03:36,842 - 0.1 0.00 seconds
+2025-05-10 13:03:36,842 - 1 0.00 seconds
+2025-05-10 13:03:37,203 - 2 0.36 seconds
+2025-05-10 13:03:38,150 - 4 0.95 seconds
+2025-05-10 13:03:38,150 - Task ai_utils.tasks.process_message[bb2d8040-9131-4974-8043-6274ad4d4395] succeeded in 1.312000000034459s: None
+2025-05-10 13:03:57,410 - 0.01 0.00 seconds
+2025-05-10 13:03:57,410 - 0.1 0.00 seconds
+2025-05-10 13:03:57,410 - 1 0.00 seconds
+2025-05-10 13:03:57,760 - 2 0.35 seconds
+2025-05-10 13:03:58,793 - 4 1.03 seconds
+2025-05-10 13:03:58,793 - Task ai_utils.tasks.process_message[1683a246-b5a1-47b9-bda1-9f0bb05c3f44] succeeded in 1.375s: None
+2025-05-10 13:04:06,624 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-10 13:04:09,157 - 0.01 0.00 seconds
+2025-05-10 13:04:09,158 - 0.1 0.00 seconds
+2025-05-10 13:04:09,158 - 1 0.00 seconds
+2025-05-10 13:04:09,767 - 2 0.61 seconds
+2025-05-10 13:04:10,914 - 4 1.15 seconds
+2025-05-10 13:04:10,925 - Task ai_utils.tasks.process_message[c6893bfe-290a-46e6-a482-5058df41e5c6] succeeded in 1.7649999999557622s: None
+2025-05-10 13:04:46,594 - 0.01 0.00 seconds
+2025-05-10 13:04:46,594 - 0.1 0.00 seconds
+2025-05-10 13:04:46,594 - 1 0.00 seconds
+2025-05-10 13:04:46,970 - 2 0.38 seconds
+2025-05-10 13:04:47,881 - 4 0.91 seconds
+2025-05-10 13:04:47,881 - Task ai_utils.tasks.process_message[1c22ed4f-c57c-4903-b449-81471dd7a1a4] succeeded in 1.2820000000065193s: None
+2025-05-10 13:05:11,329 - 0.01 0.00 seconds
+2025-05-10 13:05:11,329 - 0.1 0.00 seconds
+2025-05-10 13:05:11,329 - 1 0.00 seconds
+2025-05-10 13:05:11,693 - 2 0.36 seconds
+2025-05-10 13:05:12,486 - 4 0.79 seconds
+2025-05-10 13:05:12,487 - Task ai_utils.tasks.process_message[91c04e86-21a9-4fe3-be62-d92c69ec6fa4] succeeded in 1.1560000000172295s: None
+2025-05-10 13:05:24,568 - 0.01 0.00 seconds
+2025-05-10 13:05:24,568 - 0.1 0.00 seconds
+2025-05-10 13:05:24,569 - 1 0.00 seconds
+2025-05-10 13:05:24,979 - 2 0.41 seconds
+2025-05-10 13:05:25,710 - 4 0.73 seconds
+2025-05-10 13:05:25,710 - Task ai_utils.tasks.process_message[7364ef8d-aa63-4dbf-8422-945a51c46147] succeeded in 1.1410000000032596s: None
+2025-05-10 13:06:49,008 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-10 13:07:18,952 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-10 13:07:34,876 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-10 13:09:41,397 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-10 13:09:50,829 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-10 13:10:09,914 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py changed, reloading.
+2025-05-10 13:10:22,573 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-10 13:10:28,867 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-10 13:11:46,348 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-10 13:15:48,731 - Internal Server Error: /send-message/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views.py", line 450, in user_message
+    admin_user = User.objects.get(name=new_chat_message.msg_receiver)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+account.models.User.DoesNotExist: User matching query does not exist.
+2025-05-10 13:16:13,641 - 0.01 0.00 seconds
+2025-05-10 13:16:13,641 - 0.1 0.00 seconds
+2025-05-10 13:16:13,641 - 1 0.00 seconds
+2025-05-10 13:16:14,884 - 2 1.24 seconds
+2025-05-10 13:16:15,684 - 4 0.80 seconds
+2025-05-10 13:16:15,696 - Task ai_utils.tasks.process_message[375500f0-c933-4c12-8024-2f22af3d9e24] succeeded in 2.0469999999622814s: None
+2025-05-10 13:16:54,538 - 0.01 0.00 seconds
+2025-05-10 13:16:54,538 - 0.1 0.00 seconds
+2025-05-10 13:16:54,538 - 1 0.00 seconds
+2025-05-10 13:16:54,974 - 2 0.44 seconds
+2025-05-10 13:16:56,074 - 4 1.10 seconds
+2025-05-10 13:16:56,083 - Task ai_utils.tasks.process_message[74d2876a-6f01-49e0-b77b-4887db7f2b74] succeeded in 1.5469999999622814s: None
+2025-05-10 13:17:22,710 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:18:03,079 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:18:19,247 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:18:49,575 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:19:48,628 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:20:33,887 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:21:17,611 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:22:02,393 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:22:42,066 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:23:02,344 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:23:13,787 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:25:29,049 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:25:33,334 - 0.01 0.00 seconds
+2025-05-10 13:25:33,334 - 0.1 0.00 seconds
+2025-05-10 13:25:33,334 - 1 0.00 seconds
+2025-05-10 13:25:33,974 - 2 0.64 seconds
+2025-05-10 13:25:34,853 - 4 0.88 seconds
+2025-05-10 13:25:34,862 - Task ai_utils.tasks.process_message[81716bd3-6329-4063-9404-21b757ec7562] succeeded in 1.5310000000172295s: None
+2025-05-10 13:25:42,162 - 0.01 0.00 seconds
+2025-05-10 13:25:42,162 - 0.1 0.00 seconds
+2025-05-10 13:25:42,162 - 1 0.00 seconds
+2025-05-10 13:25:42,589 - 2 0.43 seconds
+2025-05-10 13:25:43,454 - 4 0.87 seconds
+2025-05-10 13:25:43,454 - Task ai_utils.tasks.process_message[7752e634-ad20-4142-a128-0c5fa015ad8c] succeeded in 1.2969999999622814s: None
+2025-05-10 13:29:06,360 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:31:13,873 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:31:27,582 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:31:44,615 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:31:56,824 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:32:12,660 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:33:13,815 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:34:28,718 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:34:49,721 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:35:04,109 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:35:22,081 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:35:31,068 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:35:57,738 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:36:22,933 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:37:41,912 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:38:34,914 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:38:35,201 - Not Found: /favicon.ico
+2025-05-10 13:39:18,658 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:39:19,127 - Not Found: /favicon.ico
+2025-05-10 13:39:26,607 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:39:26,920 - Not Found: /favicon.ico
+2025-05-10 13:39:37,672 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:39:37,989 - Not Found: /favicon.ico
+2025-05-10 13:39:58,081 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:39:58,400 - Not Found: /favicon.ico
+2025-05-10 13:40:14,722 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:40:15,045 - Not Found: /favicon.ico
+2025-05-10 13:43:17,252 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 13:43:17,542 - Not Found: /favicon.ico
+2025-05-10 13:43:51,905 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 16:27:59,985 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '\u0633\u0648\u0627\u0644'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 106, in create_company
+    {"question": row["\u0633\u0648\u0627\u0644"], "answer": row["\u067e\u0627\u0633\u062e"]}
+                 ~~~^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\pandas\core\series.py", line 1121, in __getitem__
+    return self._get_value(key)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\pandas\core\series.py", line 1237, in _get_value
+    loc = self.index.get_loc(label)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: '\u0633\u0648\u0627\u0644'
+2025-05-10 16:32:03,061 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-10 16:33:59,456 - Not Found: /favicon.ico
+2025-05-10 16:37:41,405 - Not Found: /favicon.ico
+2025-05-10 16:39:57,033 - Not Found: /favicon.ico
+2025-05-10 16:48:19,925 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-10 16:48:36,161 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 16:48:41,822 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 16:54:28,453 - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+2025-05-10 16:54:35,046 - 0.01 0.00 seconds
+2025-05-10 16:54:35,046 - 0.1 0.00 seconds
+2025-05-10 16:54:35,046 - 1 0.00 seconds
+2025-05-10 16:54:36,839 - 2 1.79 seconds
+2025-05-10 16:54:38,014 - 4 1.17 seconds
+2025-05-10 16:54:38,052 - Task ai_utils.tasks.process_message[350c845b-8cfa-4fef-8c0d-abcd94c378e2] succeeded in 3.0s: None
+2025-05-10 16:56:14,990 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-10 16:56:22,340 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-10 16:56:28,366 - 0.01 0.00 seconds
+2025-05-10 16:56:28,366 - 0.1 0.00 seconds
+2025-05-10 16:56:28,366 - 1 0.00 seconds
+2025-05-10 16:56:29,025 - 2 0.66 seconds
+2025-05-10 16:56:31,163 - 4 2.14 seconds
+2025-05-10 16:56:31,191 - Task ai_utils.tasks.process_message[ab5dd1c7-f64e-4d82-9df3-27767bb71c9b] succeeded in 2.827999999979511s: None
+2025-05-10 16:56:51,200 - 0.01 0.00 seconds
+2025-05-10 16:56:51,200 - 0.1 0.00 seconds
+2025-05-10 16:56:51,200 - 1 0.00 seconds
+2025-05-10 16:56:51,686 - 2 0.49 seconds
+2025-05-10 16:56:54,272 - 4 2.59 seconds
+2025-05-10 16:56:54,273 - Task ai_utils.tasks.process_message[e0fcd54b-d9a3-488b-bec2-4887b177ac07] succeeded in 3.0780000000377186s: None
+2025-05-10 17:29:18,404 - 0.01 0.00 seconds
+2025-05-10 17:29:18,404 - 0.1 0.00 seconds
+2025-05-10 17:29:18,404 - 1 0.00 seconds
+2025-05-10 17:29:19,273 - 2 0.87 seconds
+2025-05-10 17:29:20,843 - 4 1.57 seconds
+2025-05-10 17:29:20,868 - Task ai_utils.tasks.process_message[7f44a754-16bb-416b-b1ec-5adf7d561c80] succeeded in 2.4689999999827705s: None
+2025-05-10 17:29:47,020 - 0.01 0.00 seconds
+2025-05-10 17:29:47,020 - 0.1 0.00 seconds
+2025-05-10 17:29:47,021 - 1 0.00 seconds
+2025-05-10 17:29:47,657 - 2 0.64 seconds
+2025-05-10 17:29:50,198 - 4 2.54 seconds
+2025-05-10 17:29:50,198 - Task ai_utils.tasks.process_message[b8a995b2-eb88-4cb6-8be2-206d503d1100] succeeded in 3.1719999999622814s: None
+2025-05-10 17:30:26,098 - 0.01 0.00 seconds
+2025-05-10 17:30:26,099 - 0.1 0.00 seconds
+2025-05-10 17:30:26,099 - 1 0.00 seconds
+2025-05-10 17:30:26,837 - 2 0.74 seconds
+2025-05-10 17:30:31,263 - 4 4.43 seconds
+2025-05-10 17:30:31,263 - Task ai_utils.tasks.process_message[6029f075-90c7-42c2-b3c6-524110801dbb] succeeded in 5.172000000020489s: None
+2025-05-10 17:31:02,803 - 0.01 0.00 seconds
+2025-05-10 17:31:02,803 - 0.1 0.00 seconds
+2025-05-10 17:31:02,803 - 1 0.00 seconds
+2025-05-10 17:31:03,205 - 2 0.40 seconds
+2025-05-10 17:31:06,055 - 4 2.85 seconds
+2025-05-10 17:31:06,055 - Task ai_utils.tasks.process_message[a2212e64-8502-42db-951c-ec883463da68] succeeded in 3.25s: None
+2025-05-10 17:31:44,331 - 0.01 0.00 seconds
+2025-05-10 17:31:44,331 - 0.1 0.00 seconds
+2025-05-10 17:31:44,331 - 1 0.00 seconds
+2025-05-10 17:31:44,700 - 2 0.37 seconds
+2025-05-10 17:31:47,318 - 4 2.62 seconds
+2025-05-10 17:31:47,318 - Task ai_utils.tasks.process_message[f3fe821b-9416-4a01-af55-98b09184c013] succeeded in 2.9839999999967404s: None
+2025-05-10 17:32:21,317 - 0.01 0.00 seconds
+2025-05-10 17:32:21,317 - 0.1 0.00 seconds
+2025-05-10 17:32:21,317 - 1 0.00 seconds
+2025-05-10 17:32:21,959 - 2 0.64 seconds
+2025-05-10 17:32:21,965 - 4 0.01 seconds
+2025-05-10 17:32:21,965 - Task ai_utils.tasks.process_message[5b9b21d1-6efd-4051-b7a3-9a943e3a8d18] succeeded in 0.6410000000032596s: None
+2025-05-10 17:33:24,346 - 0.01 0.00 seconds
+2025-05-10 17:33:24,346 - 0.1 0.00 seconds
+2025-05-10 17:33:24,346 - 1 0.00 seconds
+2025-05-10 17:33:24,986 - 2 0.64 seconds
+2025-05-10 17:33:29,661 - 4 4.67 seconds
+2025-05-10 17:33:29,661 - Task ai_utils.tasks.process_message[d50cbb57-8ea6-49e9-a366-3841669051ec] succeeded in 5.313000000023749s: None
+2025-05-10 17:34:55,780 - 0.01 0.00 seconds
+2025-05-10 17:34:55,780 - 0.1 0.00 seconds
+2025-05-10 17:34:55,780 - 1 0.00 seconds
+2025-05-10 17:35:06,659 - 2 10.88 seconds
+2025-05-10 17:35:08,378 - 4 1.72 seconds
+2025-05-10 17:35:08,378 - Task ai_utils.tasks.process_message[6927799c-5215-4105-accb-f8a406bab55b] succeeded in 12.60999999998603s: None
+2025-05-10 17:36:17,347 - 0.01 0.00 seconds
+2025-05-10 17:36:17,347 - 0.1 0.00 seconds
+2025-05-10 17:36:17,347 - 1 0.00 seconds
+2025-05-10 17:36:17,994 - 2 0.65 seconds
+2025-05-10 17:36:19,558 - 4 1.56 seconds
+2025-05-10 17:36:19,558 - Task ai_utils.tasks.process_message[7410a010-c80f-4c7e-9fff-7d0740487bd3] succeeded in 2.202999999979511s: None
+2025-05-10 17:39:01,770 - 0.01 0.00 seconds
+2025-05-10 17:39:01,770 - 0.1 0.00 seconds
+2025-05-10 17:39:01,770 - 1 0.00 seconds
+2025-05-10 17:39:03,057 - 2 1.29 seconds
+2025-05-10 17:39:05,474 - 4 2.42 seconds
+2025-05-10 17:39:05,500 - Task ai_utils.tasks.process_message[66abfc81-be5a-40c4-9917-da004a770eed] succeeded in 3.73499999998603s: None
+2025-05-10 17:39:33,988 - 0.01 0.00 seconds
+2025-05-10 17:39:33,989 - 0.1 0.00 seconds
+2025-05-10 17:39:33,989 - 1 0.00 seconds
+2025-05-10 17:39:34,415 - 2 0.43 seconds
+2025-05-10 17:39:36,270 - 4 1.86 seconds
+2025-05-10 17:39:36,270 - Task ai_utils.tasks.process_message[a5888f62-71a9-420a-ab57-089949016279] succeeded in 2.2810000000172295s: None
+2025-05-10 17:40:13,321 - 0.01 0.00 seconds
+2025-05-10 17:40:13,321 - 0.1 0.00 seconds
+2025-05-10 17:40:13,321 - 1 0.00 seconds
+2025-05-10 17:40:13,699 - 2 0.38 seconds
+2025-05-10 17:40:18,390 - 4 4.69 seconds
+2025-05-10 17:40:18,390 - Task ai_utils.tasks.process_message[b9baa10e-90b7-419e-9c74-67c8736523a7] succeeded in 5.078000000037719s: None
+2025-05-10 17:40:34,609 - 0.01 0.00 seconds
+2025-05-10 17:40:34,610 - 0.1 0.00 seconds
+2025-05-10 17:40:34,610 - 1 0.00 seconds
+2025-05-10 17:40:35,288 - 2 0.68 seconds
+2025-05-10 17:40:36,748 - 4 1.46 seconds
+2025-05-10 17:40:36,748 - Task ai_utils.tasks.process_message[04618047-262d-4895-b431-65f614c14c95] succeeded in 2.1410000000032596s: None

@@ -126,6 +126,7 @@ class CompanyAPIKeyAuthentication(BaseAuthentication):
         request.company = company  # Attach the company object to the request
         request.user = token.user  # Attach the user object to the request
         # 🔹 اضافه کردن اشتراک کاربر به درخواست
+        print(request.company.name)
         try:
             request.subscription = token.user.subscription  # اشتراک کاربر
         except UserSubscription.DoesNotExist:
@@ -164,7 +165,7 @@ class MessageListView(APIView):
 
         # Separate messages by received=True and received=False
         received_true_messages = Meesages.objects.filter(
-            # Q(create__gte=today) &
+            Q(create__gte=today) &
             Q(received=True) &
             Q(company=company) &  # Filter by company
             (
@@ -210,7 +211,6 @@ class MessageListView(APIView):
 
         received_true_serialized = serialize_messages(received_true_messages)
         received_false_serialized = serialize_messages(received_false_messages)
-        print("🔑")
         return Response({
             "welcome": welcome_message,
             "admin_img": adminImg,
@@ -227,7 +227,6 @@ class MessageListView(APIView):
             return Response({"message": "Message marked as received successfully."}, status=200)
         except Meesages.DoesNotExist:
             return Response({"error": "Message not found."}, status=404)
-    print("1")
     def post(self, request):
         # print(request.data)
         data = request.data.copy()
@@ -297,7 +296,6 @@ class MessageListView(APIView):
                 "company": message.company.name if message.company else None,
                 "msgFile": message.msgFile.url if message.msgFile else None
             }, status=status.HTTP_201_CREATED)
-        print("🔑")
         return Response(
             {"error": "Validation failed", "details": serializer.errors},
             status=status.HTTP_400_BAD_REQUEST
@@ -363,9 +361,10 @@ def get_company_from_api_key(request):
 
 def connection(request):
     data = json.loads(request.body)
-    # print(data)
+    print('dataaaaaaaaaaaaaaaaaaaaaa: ',data)
     # print(request.user.name)
     company = get_object_or_404(Company, name=data['company'])
+    print('no erooooooooooooooooooooooooor')
     connection = Connection.objects.filter(userEmail=data['userEmail'], userNumber=data['userNumber'],
                                            company=company).exists()
     # Online Admin

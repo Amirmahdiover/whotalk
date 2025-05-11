@@ -10,7 +10,7 @@ class User(AbstractUser):
     image = models.ImageField(upload_to='images_uploaded', blank=True, null=True)
     online = models.BooleanField(default=False)
     phone_number = models.CharField(max_length=11, unique=True)
-
+    REQUIRED_FIELDS = ['phone_number']
     def save(self, *args, **kwargs):
         # اگر مقدار phone_number خالی نباشد، آن را در username ست کن
         if self.phone_number:

@@ -37,38 +37,31 @@ def process_message(message_id, file_data=None, file_name=None):
         admin_user =  User.objects.get(name=message.msg_receiver)
         user_question = message.text.strip()
 
-        # ✅ Helper to generate safe folder name
-        def slugify(name):
-            return re.sub(r'[^a-zA-Z0-9_-]', '_', name).lower()
+        
+        faq_data = company.faq_json  # JSONField: list of {"question": ..., "answer": ...}
+        embedding_bytes = company.faq_embeddings
+        logging.info(f"0.01 {time.time() - start:.2f} seconds")
+        start=time.time()
+        logging.info(f"0.1 {time.time() - start:.2f} seconds")
+        start=time.time()
+        # Restore embeddings and FAISS index
+        embeddings = np.frombuffer(embedding_bytes, dtype='float32')
+        embedding_dim = len(embeddings) // len(faq_data)
+        embeddings = embeddings.reshape(len(faq_data), embedding_dim)
+        # embeddings = embeddings.reshape(len(faq_data), -1)
 
-        # ✅ Step 1: Get company name (hardcoded or from request/session)
-        company_slug = slugify(company.name)
-        base_path = os.path.join("companies", company_slug)
+        dimension = embeddings.shape[1]
+        index = faiss.IndexFlatIP(dimension)
+        index.add(embeddings)
 
-        # ✅ Step 2: Load index and metadata paths
-        index_path = os.path.join(base_path, "faq.index")
-        faq_json_path = os.path.join(base_path, "faq_data.json")
-        print(index_path,faq_json_path)
-        if not os.path.exists(index_path) or not os.path.exists(faq_json_path):
-            print(f"❌ No data found for company: {company.name}")
-            exit()
-
-        # Load JSON metadata
-        with open(faq_json_path, "r", encoding="utf-8") as f:
-            faq_data = json.load(f)
-
-        # Load FAISS index
-        index = faiss.read_index(index_path)
-
-
+# 2-----------------------------------------------------
 
         logging.info(f"1 {time.time() - start:.2f} seconds")
         start = time.time()
         if not faq_data:
             chatgpt_response = "لطفاً با پشتیبانی تماس بگیرید: ۰۹۱۲۴۲۲۵۷۲۹"
             processed_by_api = True
-            logging.info(f"2 {time.time() - start:.2f} seconds")
-            start = time.time()
+
         else:
             
             # Embed user question
@@ -82,9 +75,9 @@ def process_message(message_id, file_data=None, file_name=None):
             D, I = index.search(np.array([user_embedding]), k)
 
 
+
             logging.info(f"2 {time.time() - start:.2f} seconds")
             start = time.time()
-
             # ✅ Distance threshold (FAISS returns L2 by default)
             threshold = 0.7  # adjust depending on your embeddings' quality
 
@@ -103,8 +96,6 @@ def process_message(message_id, file_data=None, file_name=None):
                 print('top_faqs:',top_faqs)
                 faq_context = "\n\n".join([f"Q: {item['question']}\nA: {item['answer']}" for item in top_faqs])
                 prompt = f"شما یک ربات پشتیبانی حرفه‌ای برای برند {company.name} هستید. با استفاده از اطلاعات زیر به سوالات کاربران پاسخ دهید.\n\n{faq_context}\n\nسوال کاربر: {user_question}"
-                logging.info(f"3 {time.time() - start:.2f} seconds")
-                start = time.time()
                 print("📤 PROMPT TO CHATGPT:\n", prompt)
                 response = openai.ChatCompletion.create(
                     model="gpt-4o-mini",
