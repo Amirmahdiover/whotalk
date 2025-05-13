@@ -24,7 +24,7 @@ api_key = 'sk-proj-O4Jbbq7_ltJK7AACdEUHvZGDmK7yGtapYIwV0_MODILcpPq2480Dv98lwIyiT
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(message)s',
-    filename=r'C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\tasks.log'
+    filename=r'tasks.log'
 )
 
 @shared_task
