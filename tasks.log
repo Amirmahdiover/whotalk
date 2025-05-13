@@ -15370,3 +15370,1042 @@ KeyError: '\u0633\u0648\u0627\u0644'
 2025-05-10 17:40:35,288 - 2 0.68 seconds
 2025-05-10 17:40:36,748 - 4 1.46 seconds
 2025-05-10 17:40:36,748 - Task ai_utils.tasks.process_message[04618047-262d-4895-b431-65f614c14c95] succeeded in 2.1410000000032596s: None
+2025-05-11 13:45:20,974 - Not Found: /favicon.ico
+2025-05-11 13:45:48,851 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 88, in create_company
+    save_faq_embeddings_for_company(company, faq_data)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 20, in save_faq_embeddings_for_company
+    embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\langchain_core\_api\deprecation.py", line 224, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\pydantic\main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for OpenAIEmbeddings
+  Value error, Did not find openai_api_key, please add an environment variable `OPENAI_API_KEY` which contains it, or pass `openai_api_key` as a named parameter. [type=value_error, input_value={'model': 'text-embedding...20, 'http_client': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/value_error
+2025-05-11 13:47:30,410 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-11 13:47:37,305 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\langchain_community\embeddings\openai.py", line 453, in _get_len_safe_embeddings
+    import tiktoken
+ModuleNotFoundError: No module named 'tiktoken'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 88, in create_company
+    save_faq_embeddings_for_company(company, faq_data)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 23, in save_faq_embeddings_for_company
+    vectorstore = FAISS.from_documents(docs, embedding=embeddings)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\langchain_core\vectorstores\base.py", line 848, in from_documents
+    return cls.from_texts(texts, embedding, metadatas=metadatas, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\langchain_community\vectorstores\faiss.py", line 1043, in from_texts
+    embeddings = embedding.embed_documents(texts)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\langchain_community\embeddings\openai.py", line 671, in embed_documents
+    return self._get_len_safe_embeddings(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\langchain_community\embeddings\openai.py", line 455, in _get_len_safe_embeddings
+    raise ImportError(
+ImportError: Could not import tiktoken python package. This is needed in order to for OpenAIEmbeddings. Please install it with `pip install tiktoken`.
+2025-05-11 15:17:05,033 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-11 15:57:10,457 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-11 15:58:25,146 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-11 15:59:47,790 - Task ai_utils.tasks.process_message[f606f298-0010-482a-b672-e0aaf5102446] succeeded in 0.01600000000325963s: None
+2025-05-11 16:00:35,514 - Task ai_utils.tasks.process_message[d29f7dc5-69dc-426e-a63f-567d8d96fe6b] succeeded in 0.015000000013969839s: None
+2025-05-11 16:01:52,288 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-11 16:02:02,018 - Task ai_utils.tasks.process_message[e039bc8f-8c4d-4f5a-910f-57a9d6e63af7] succeeded in 0.031000000017229468s: None
+2025-05-11 16:02:13,585 - Task ai_utils.tasks.process_message[b638beb1-073c-45a0-8ab7-0eaa40c4ebc8] succeeded in 0.01600000000325963s: None
+2025-05-11 16:04:13,495 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-11 16:04:22,806 - Task ai_utils.tasks.process_message[1cce4e46-4491-42f6-9ed5-78825104b0e0] succeeded in 0.030999999959021807s: None
+2025-05-11 16:04:41,678 - Task ai_utils.tasks.process_message[58a35681-22ef-4a08-80f7-7234252e4a9b] succeeded in 0.014999999955762178s: None
+2025-05-11 16:07:26,447 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-11 16:07:32,487 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-11 16:07:43,564 - 4 1.94 seconds
+2025-05-11 16:07:43,581 - Task ai_utils.tasks.process_message[7c0f5e0a-f55e-40c1-aaf6-66de31932e0d] succeeded in 1.952999999979511s: None
+2025-05-11 16:08:00,285 - 4 3.46 seconds
+2025-05-11 16:08:00,286 - Task ai_utils.tasks.process_message[b7e789fa-6631-45a8-8354-dadcc54666c5] succeeded in 3.4530000000377186s: None
+2025-05-11 16:16:03,869 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-11 16:16:15,341 - 4 1.53 seconds
+2025-05-11 16:16:15,355 - Task ai_utils.tasks.process_message[1b822897-3854-4d59-89ec-758053138bb2] succeeded in 1.5310000000172295s: None
+2025-05-11 16:16:26,545 - 4 1.89 seconds
+2025-05-11 16:16:26,546 - Task ai_utils.tasks.process_message[623e2546-9a88-4680-8c29-0bc89d978463] succeeded in 1.9059999999590218s: None
+2025-05-11 16:17:24,900 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-11 16:18:04,149 - 4 1.71 seconds
+2025-05-11 16:18:04,165 - Task ai_utils.tasks.process_message[3fd3764a-3889-4277-a5f2-0d6aad93cb27] succeeded in 1.7190000000409782s: None
+2025-05-11 16:18:17,043 - 4 2.16 seconds
+2025-05-11 16:18:17,043 - Task ai_utils.tasks.process_message[1369b9b0-d072-465f-9fcf-445e6bfe70a6] succeeded in 2.1560000000172295s: None
+2025-05-11 16:20:06,869 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-11 16:20:42,061 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')': /v1/embeddings
+2025-05-11 16:20:54,096 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')': /v1/embeddings
+2025-05-11 16:20:56,131 - Retrying langchain_community.embeddings.openai.embed_with_retry.<locals>._embed_with_retry in 4.0 seconds as it raised APIConnectionError: Error communicating with OpenAI: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/embeddings (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)'))).
+2025-05-11 16:21:02,169 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')': /v1/embeddings
+2025-05-11 16:21:08,857 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')': /v1/embeddings
+2025-05-11 16:21:10,905 - Task ai_utils.tasks.process_message[f4e1f3d4-4107-4b3e-b12f-81701e863fe7] succeeded in 54.31300000002375s: None
+2025-05-11 16:22:35,641 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')': /v1/embeddings
+2025-05-11 16:22:37,683 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')': /v1/embeddings
+2025-05-11 16:22:39,719 - Retrying langchain_community.embeddings.openai.embed_with_retry.<locals>._embed_with_retry in 4.0 seconds as it raised APIConnectionError: Error communicating with OpenAI: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/embeddings (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)'))).
+2025-05-11 16:22:45,740 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')': /v1/embeddings
+2025-05-11 16:22:47,779 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')': /v1/embeddings
+2025-05-11 16:22:49,838 - Task ai_utils.tasks.process_message[746006ef-7a7b-4916-aa16-93490e69a079] succeeded in 16.23499999998603s: None
+2025-05-11 16:22:52,416 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')': /v1/embeddings
+2025-05-11 16:23:06,356 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')': /v1/embeddings
+2025-05-11 16:23:08,371 - Retrying langchain_community.embeddings.openai.embed_with_retry.<locals>._embed_with_retry in 4.0 seconds as it raised APIConnectionError: Error communicating with OpenAI: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/embeddings (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)'))).
+2025-05-11 16:23:14,418 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')': /v1/embeddings
+2025-05-11 16:23:16,454 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')': /v1/embeddings
+2025-05-11 16:23:18,640 - Internal Server Error: /create-company/
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\urllib3\connectionpool.py", line 873, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\urllib3\connectionpool.py", line 873, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/embeddings (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\openai\api_requestor.py", line 596, in request_raw
+    result = _thread_context.session.request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\requests\adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/embeddings (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 88, in create_company
+    save_faq_embeddings_for_company(company, faq_data)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 24, in save_faq_embeddings_for_company
+    vectorstore = FAISS.from_documents(docs, embedding=embeddings)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\langchain_core\vectorstores\base.py", line 848, in from_documents
+    return cls.from_texts(texts, embedding, metadatas=metadatas, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\langchain_community\vectorstores\faiss.py", line 1043, in from_texts
+    embeddings = embedding.embed_documents(texts)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\langchain_community\embeddings\openai.py", line 671, in embed_documents
+    return self._get_len_safe_embeddings(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\langchain_community\embeddings\openai.py", line 497, in _get_len_safe_embeddings
+    response = embed_with_retry(
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\langchain_community\embeddings\openai.py", line 128, in embed_with_retry
+    return _embed_with_retry(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\tenacity\__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\tenacity\__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\langchain_community\embeddings\openai.py", line 125, in _embed_with_retry
+    response = embeddings.client.create(**kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\openai\api_resources\embedding.py", line 33, in create
+    response = super().create(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\openai\api_resources\abstract\engine_api_resource.py", line 153, in create
+    response, _, api_key = requestor.request(
+                           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\openai\api_requestor.py", line 288, in request
+    result = self.request_raw(
+             ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\openai\api_requestor.py", line 609, in request_raw
+    raise error.APIConnectionError(
+openai.error.APIConnectionError: Error communicating with OpenAI: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/embeddings (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-05-11 16:23:41,929 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-11 16:23:44,921 - Loading faiss with AVX2 support.
+2025-05-11 16:23:44,939 - Successfully loaded faiss with AVX2 support.
+2025-05-11 16:23:44,943 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-11 16:24:08,480 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')': /v1/embeddings
+2025-05-11 16:24:10,494 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')': /v1/embeddings
+2025-05-11 16:24:12,531 - Retrying langchain_community.embeddings.openai.embed_with_retry.<locals>._embed_with_retry in 4.0 seconds as it raised APIConnectionError: Error communicating with OpenAI: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/embeddings (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)'))).
+2025-05-11 16:24:18,573 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')': /v1/embeddings
+2025-05-11 16:24:20,610 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')': /v1/embeddings
+2025-05-11 16:24:22,690 - Internal Server Error: /create-company/
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\urllib3\connectionpool.py", line 873, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\urllib3\connectionpool.py", line 873, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/embeddings (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\openai\api_requestor.py", line 596, in request_raw
+    result = _thread_context.session.request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\requests\adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/embeddings (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 88, in create_company
+    save_faq_embeddings_for_company(company, faq_data)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 24, in save_faq_embeddings_for_company
+    vectorstore = FAISS.from_documents(docs, embedding=embeddings)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\langchain_core\vectorstores\base.py", line 848, in from_documents
+    return cls.from_texts(texts, embedding, metadatas=metadatas, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\langchain_community\vectorstores\faiss.py", line 1043, in from_texts
+    embeddings = embedding.embed_documents(texts)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\langchain_community\embeddings\openai.py", line 671, in embed_documents
+    return self._get_len_safe_embeddings(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\langchain_community\embeddings\openai.py", line 497, in _get_len_safe_embeddings
+    response = embed_with_retry(
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\langchain_community\embeddings\openai.py", line 128, in embed_with_retry
+    return _embed_with_retry(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\tenacity\__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\tenacity\__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\langchain_community\embeddings\openai.py", line 125, in _embed_with_retry
+    response = embeddings.client.create(**kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\openai\api_resources\embedding.py", line 33, in create
+    response = super().create(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\openai\api_resources\abstract\engine_api_resource.py", line 153, in create
+    response, _, api_key = requestor.request(
+                           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\openai\api_requestor.py", line 288, in request
+    result = self.request_raw(
+             ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\openai\api_requestor.py", line 609, in request_raw
+    raise error.APIConnectionError(
+openai.error.APIConnectionError: Error communicating with OpenAI: HTTPSConnectionPool(host='api.openai.com', port=443): Max retries exceeded with url: /v1/embeddings (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2025-05-11 16:28:46,900 - No relevant docs were retrieved using the relevance score threshold 0.7
+2025-05-11 16:28:46,922 - Task ai_utils.tasks.process_message[8773bdaa-b124-426c-bdea-e6019f57b2d1] succeeded in 0.5309999999590218s: None
+2025-05-11 16:29:02,637 - No relevant docs were retrieved using the relevance score threshold 0.7
+2025-05-11 16:29:02,644 - Task ai_utils.tasks.process_message[439cee81-1d07-4fed-bc03-4dd51dd164c3] succeeded in 0.7190000000409782s: None
+2025-05-11 16:29:50,719 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-11 16:29:53,748 - Loading faiss with AVX2 support.
+2025-05-11 16:29:53,767 - Successfully loaded faiss with AVX2 support.
+2025-05-11 16:29:53,771 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-11 16:29:58,678 - 4 2.67 seconds
+2025-05-11 16:29:58,694 - Task ai_utils.tasks.process_message[76b18c17-95b6-4dc3-8096-cbbe36c67b53] succeeded in 2.6719999999622814s: None
+2025-05-11 16:30:09,475 - 4 1.65 seconds
+2025-05-11 16:30:09,475 - Task ai_utils.tasks.process_message[2b50c3ee-4730-4a5a-9ade-f6e2a19edd05] succeeded in 1.6400000000139698s: None
+2025-05-11 16:30:39,174 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-11 16:30:42,011 - Loading faiss with AVX2 support.
+2025-05-11 16:30:42,027 - Successfully loaded faiss with AVX2 support.
+2025-05-11 16:30:42,031 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-11 16:30:51,213 - No relevant docs were retrieved using the relevance score threshold 0.7
+2025-05-11 16:30:51,236 - Task ai_utils.tasks.process_message[e6f02dd1-e3dc-4958-9713-244764f3f36e] succeeded in 0.8279999999795109s: None
+2025-05-11 16:31:00,466 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-11 16:31:03,459 - Loading faiss with AVX2 support.
+2025-05-11 16:31:03,476 - Successfully loaded faiss with AVX2 support.
+2025-05-11 16:31:03,480 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-11 16:31:05,279 - No relevant docs were retrieved using the relevance score threshold 0.1
+2025-05-11 16:31:05,301 - Task ai_utils.tasks.process_message[e5611306-fb46-44ef-a52b-f54c54554733] succeeded in 1.625s: None
+2025-05-11 16:31:09,385 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-11 16:31:12,342 - Loading faiss with AVX2 support.
+2025-05-11 16:31:12,359 - Successfully loaded faiss with AVX2 support.
+2025-05-11 16:31:12,363 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-11 16:31:13,678 - No relevant docs were retrieved using the relevance score threshold 0.9
+2025-05-11 16:31:13,698 - Task ai_utils.tasks.process_message[e05f8fb3-6825-4308-a83a-c44c88ce3a10] succeeded in 1.0309999999590218s: None
+2025-05-11 16:31:24,263 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-11 16:31:27,275 - Loading faiss with AVX2 support.
+2025-05-11 16:31:27,292 - Successfully loaded faiss with AVX2 support.
+2025-05-11 16:31:27,296 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-11 16:31:29,603 - No relevant docs were retrieved using the relevance score threshold 0.9
+2025-05-11 16:31:29,622 - Task ai_utils.tasks.process_message[1ad437c8-df45-43f3-9a77-5a00adfebc93] succeeded in 0.7820000000065193s: None
+2025-05-11 16:31:37,487 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-11 16:31:40,416 - Loading faiss with AVX2 support.
+2025-05-11 16:31:40,433 - Successfully loaded faiss with AVX2 support.
+2025-05-11 16:31:40,438 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-11 16:31:47,146 - 4 2.13 seconds
+2025-05-11 16:31:47,159 - Task ai_utils.tasks.process_message[2bb8757f-0fc4-43a8-b8c1-786be8ac6a0a] succeeded in 2.1560000000172295s: None
+2025-05-11 16:31:56,958 - No relevant docs were retrieved using the relevance score threshold 0.1
+2025-05-11 16:31:56,964 - Task ai_utils.tasks.process_message[16cd765d-b0a3-4eb4-9d84-0c6751ff586e] succeeded in 0.42199999996228144s: None
+2025-05-11 16:32:11,398 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-11 16:32:14,370 - Loading faiss with AVX2 support.
+2025-05-11 16:32:14,388 - Successfully loaded faiss with AVX2 support.
+2025-05-11 16:32:14,392 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-11 16:32:15,540 - No relevant docs were retrieved using the relevance score threshold 0.9
+2025-05-11 16:32:15,562 - Task ai_utils.tasks.process_message[0de55a2e-d5ae-4a7c-a492-d6749dc4038b] succeeded in 1.0160000000032596s: None
+2025-05-11 16:32:25,205 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-11 16:32:28,170 - Loading faiss with AVX2 support.
+2025-05-11 16:32:28,187 - Successfully loaded faiss with AVX2 support.
+2025-05-11 16:32:28,191 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-11 16:40:48,088 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-11 16:40:50,964 - Loading faiss with AVX2 support.
+2025-05-11 16:40:50,981 - Successfully loaded faiss with AVX2 support.
+2025-05-11 16:40:50,985 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-11 16:40:54,039 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-11 16:40:57,066 - Loading faiss with AVX2 support.
+2025-05-11 16:40:57,082 - Successfully loaded faiss with AVX2 support.
+2025-05-11 16:40:57,086 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-11 16:41:02,608 - Task ai_utils.tasks.process_message[8ae118e8-e88f-4191-a534-910232905090] succeeded in 0.8910000000032596s: None
+2025-05-11 16:41:57,496 - Task ai_utils.tasks.process_message[07c057a6-a333-421b-b8d0-b9ae78c6f0a2] succeeded in 0.5310000000172295s: None
+2025-05-11 16:43:49,579 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-11 16:43:52,633 - Loading faiss with AVX2 support.
+2025-05-11 16:43:52,649 - Successfully loaded faiss with AVX2 support.
+2025-05-11 16:43:52,654 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-11 16:43:57,388 - 4 1.61 seconds
+2025-05-11 16:43:57,405 - Task ai_utils.tasks.process_message[3f9a7aa8-cda7-4254-99b3-93c087172872] succeeded in 1.625s: None
+2025-05-11 16:44:30,553 - 4 1.69 seconds
+2025-05-11 16:44:30,553 - Task ai_utils.tasks.process_message[ed39e8ad-d431-4f5d-bb15-154035ac6058] succeeded in 1.6869999999762513s: None
+2025-05-11 16:44:47,088 - 4 2.40 seconds
+2025-05-11 16:44:47,088 - Task ai_utils.tasks.process_message[25f1ce92-737e-4604-89d6-07aa7628f20c] succeeded in 2.3910000000032596s: None
+2025-05-11 16:45:03,176 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-11 16:45:06,164 - Loading faiss with AVX2 support.
+2025-05-11 16:45:06,180 - Successfully loaded faiss with AVX2 support.
+2025-05-11 16:45:06,184 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-11 16:45:08,463 - 4 2.11 seconds
+2025-05-11 16:45:08,476 - Task ai_utils.tasks.process_message[cb5bae0a-9422-4dbf-934f-ea6bde9e848c] succeeded in 2.125s: None
+2025-05-11 16:45:17,443 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-11 16:45:20,428 - Loading faiss with AVX2 support.
+2025-05-11 16:45:20,444 - Successfully loaded faiss with AVX2 support.
+2025-05-11 16:45:20,449 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-11 16:45:23,609 - 4 2.99 seconds
+2025-05-11 16:45:23,623 - Task ai_utils.tasks.process_message[f9d18f5b-d3da-4d80-897e-f7c15c7913c7] succeeded in 3.0160000000032596s: None
+2025-05-11 16:45:32,836 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-11 16:45:35,882 - Loading faiss with AVX2 support.
+2025-05-11 16:45:35,898 - Successfully loaded faiss with AVX2 support.
+2025-05-11 16:45:35,903 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-11 16:45:38,776 - 4 2.68 seconds
+2025-05-11 16:45:38,789 - Task ai_utils.tasks.process_message[85b6aef5-98e7-4025-8c18-0b75c6483af3] succeeded in 2.6880000000237487s: None
+2025-05-11 16:46:52,000 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-11 16:46:54,895 - Loading faiss with AVX2 support.
+2025-05-11 16:46:54,912 - Successfully loaded faiss with AVX2 support.
+2025-05-11 16:46:54,916 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-11 16:47:03,436 - 4 2.39 seconds
+2025-05-11 16:47:03,451 - Task ai_utils.tasks.process_message[aaec202e-ea5a-49b9-877b-0ed97786e4be] succeeded in 2.4219999999622814s: None
+2025-05-11 16:49:41,918 - 4 1.90 seconds
+2025-05-11 16:49:41,918 - Task ai_utils.tasks.process_message[8ea77408-b28b-4108-98fb-2e10ef0f427f] succeeded in 1.8910000000032596s: None
+2025-05-11 16:49:53,373 - 4 1.70 seconds
+2025-05-11 16:49:53,373 - Task ai_utils.tasks.process_message[01383289-2448-41f1-bbdb-31f8adda1409] succeeded in 1.7040000000270084s: None
+2025-05-11 16:50:52,354 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-11 16:50:55,416 - Loading faiss with AVX2 support.
+2025-05-11 16:50:55,433 - Successfully loaded faiss with AVX2 support.
+2025-05-11 16:50:55,437 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-11 16:50:59,710 - 4 3.35 seconds
+2025-05-11 16:50:59,724 - Task ai_utils.tasks.process_message[33af4262-83ea-423a-ac30-420f6c32c96b] succeeded in 3.3589999999967404s: None
+2025-05-11 16:54:55,846 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-11 16:54:58,759 - Loading faiss with AVX2 support.
+2025-05-11 16:54:58,775 - Successfully loaded faiss with AVX2 support.
+2025-05-11 16:54:58,779 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-11 16:55:07,217 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-11 16:55:10,214 - Loading faiss with AVX2 support.
+2025-05-11 16:55:10,231 - Successfully loaded faiss with AVX2 support.
+2025-05-11 16:55:10,235 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-11 16:55:17,036 - error_code=invalid_api_key error_message='Incorrect API key provided: sk-.... You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2025-05-11 16:55:17,069 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 88, in create_company
+    save_faq_embeddings_for_company(company, faq_data)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 22, in save_faq_embeddings_for_company
+    vectors = embeddings.embed_documents(texts)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\langchain_community\embeddings\openai.py", line 671, in embed_documents
+    return self._get_len_safe_embeddings(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\langchain_community\embeddings\openai.py", line 497, in _get_len_safe_embeddings
+    response = embed_with_retry(
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\langchain_community\embeddings\openai.py", line 128, in embed_with_retry
+    return _embed_with_retry(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\tenacity\__init__.py", line 400, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+                                     ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\langchain_community\embeddings\openai.py", line 125, in _embed_with_retry
+    response = embeddings.client.create(**kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\openai\api_resources\embedding.py", line 33, in create
+    response = super().create(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\openai\api_resources\abstract\engine_api_resource.py", line 153, in create
+    response, _, api_key = requestor.request(
+                           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\openai\api_requestor.py", line 298, in request
+    resp, got_stream = self._interpret_response(result, stream)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\openai\api_requestor.py", line 700, in _interpret_response
+    self._interpret_response_line(
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\openai\api_requestor.py", line 765, in _interpret_response_line
+    raise self.handle_error_response(
+openai.error.AuthenticationError: Incorrect API key provided: sk-.... You can find your API key at https://platform.openai.com/account/api-keys.
+2025-05-11 16:55:36,014 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-11 16:55:38,937 - Loading faiss with AVX2 support.
+2025-05-11 16:55:38,953 - Successfully loaded faiss with AVX2 support.
+2025-05-11 16:55:38,957 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-11 16:55:53,576 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 88, in create_company
+    save_faq_embeddings_for_company(company, faq_data)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 35, in save_faq_embeddings_for_company
+    vectorstore = FAISS(embedding_function=embeddings, index=index, documents=docs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: FAISS.__init__() got an unexpected keyword argument 'documents'
+2025-05-11 16:56:51,910 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-11 16:56:54,804 - Loading faiss with AVX2 support.
+2025-05-11 16:56:54,819 - Successfully loaded faiss with AVX2 support.
+2025-05-11 16:56:54,824 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-11 16:57:02,397 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 88, in create_company
+    save_faq_embeddings_for_company(company, faq_data)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 35, in save_faq_embeddings_for_company
+    vectorstore = FAISS.from_embeddings(
+                  ^^^^^^^^^^^^^^^^^^^^^^
+TypeError: FAISS.from_embeddings() missing 1 required positional argument: 'text_embeddings'
+2025-05-11 16:58:16,457 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-11 16:58:19,313 - Loading faiss with AVX2 support.
+2025-05-11 16:58:19,330 - Successfully loaded faiss with AVX2 support.
+2025-05-11 16:58:19,334 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-11 16:58:24,508 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-11 16:58:27,363 - Loading faiss with AVX2 support.
+2025-05-11 16:58:27,379 - Successfully loaded faiss with AVX2 support.
+2025-05-11 16:58:27,383 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-11 16:58:31,098 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 88, in create_company
+    save_faq_embeddings_for_company(company, faq_data)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 14, in save_faq_embeddings_for_company
+    embeddings = OpenAIEmbeddings(model="text-embedding-3-small", openai_api_key=api_key)
+                                                                                 ^^^^^^^
+NameError: name 'api_key' is not defined
+2025-05-11 16:59:09,071 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-11 16:59:11,965 - Loading faiss with AVX2 support.
+2025-05-11 16:59:11,982 - Successfully loaded faiss with AVX2 support.
+2025-05-11 16:59:11,987 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-11 16:59:17,534 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 88, in create_company
+    save_faq_embeddings_for_company(company, faq_data)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 24, in save_faq_embeddings_for_company
+    vectorstore = FAISS.from_embeddings(
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\langchain_community\vectorstores\faiss.py", line 1119, in from_embeddings
+    texts, embeddings = zip(*text_embeddings)
+    ^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
+2025-05-11 16:59:51,899 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-11 16:59:54,818 - Loading faiss with AVX2 support.
+2025-05-11 16:59:54,836 - Successfully loaded faiss with AVX2 support.
+2025-05-11 16:59:54,840 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-11 17:00:06,117 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 88, in create_company
+    save_faq_embeddings_for_company(company, faq_data)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 26, in save_faq_embeddings_for_company
+    vectorstore = FAISS.from_embeddings(
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\langchain_community\vectorstores\faiss.py", line 1120, in from_embeddings
+    return cls.__from(
+           ^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\langchain_community\vectorstores\faiss.py", line 1004, in __from
+    vecstore = cls(
+               ^^^^
+TypeError: FAISS.__init__() got multiple values for argument 'index'
+2025-05-11 17:00:50,498 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-11 17:00:53,436 - Loading faiss with AVX2 support.
+2025-05-11 17:00:53,453 - Successfully loaded faiss with AVX2 support.
+2025-05-11 17:00:53,457 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-11 17:01:26,390 - 4 2.36 seconds
+2025-05-11 17:01:26,404 - Task ai_utils.tasks.process_message[cc6de106-2c46-4f4c-8966-73321fb43da6] succeeded in 2.375s: None
+2025-05-11 17:01:37,559 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-11 17:01:40,537 - Loading faiss with AVX2 support.
+2025-05-11 17:01:40,553 - Successfully loaded faiss with AVX2 support.
+2025-05-11 17:01:40,558 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-11 17:01:44,417 - 4 3.57 seconds
+2025-05-11 17:01:44,433 - Task ai_utils.tasks.process_message[b726640a-96f5-4d6a-b3c7-9d2806add838] succeeded in 3.577999999979511s: None
+2025-05-12 16:44:06,528 - Loading faiss with AVX2 support.
+2025-05-12 16:44:06,736 - Successfully loaded faiss with AVX2 support.
+2025-05-12 16:44:06,743 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-12 16:44:09,583 - Not Found: /favicon.ico
+2025-05-12 16:44:26,012 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 88, in create_company
+    save_faq_embeddings_for_company(company, faq_data)
+TypeError: save_faq_embeddings_for_company() missing 1 required positional argument: 'api_key'
+2025-05-12 16:44:38,727 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-12 16:44:41,677 - Loading faiss with AVX2 support.
+2025-05-12 16:44:41,693 - Successfully loaded faiss with AVX2 support.
+2025-05-12 16:44:41,698 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-12 16:44:48,502 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 88, in create_company
+    save_faq_embeddings_for_company(company, faq_data)
+TypeError: save_faq_embeddings_for_company() missing 1 required positional argument: 'api_key'
+2025-05-12 16:46:12,163 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-12 16:46:15,052 - Loading faiss with AVX2 support.
+2025-05-12 16:46:15,069 - Successfully loaded faiss with AVX2 support.
+2025-05-12 16:46:15,073 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-12 16:46:20,404 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 88, in create_company
+    save_faq_embeddings_for_company(company, faq_data)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 20, in save_faq_embeddings_for_company
+    vectorstore = FAISS.from_documents(
+                  ^^^^^^^^^^^^^^^^^^^^^
+TypeError: VectorStore.from_documents() missing 1 required positional argument: 'documents'
+2025-05-12 16:47:30,512 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-12 16:47:33,469 - Loading faiss with AVX2 support.
+2025-05-12 16:47:33,486 - Successfully loaded faiss with AVX2 support.
+2025-05-12 16:47:33,491 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-12 16:49:13,093 - 4 2.86 seconds
+2025-05-12 16:49:13,107 - Task ai_utils.tasks.process_message[d1910be1-0428-4f24-bc03-5061330158cf] succeeded in 2.875s: None
+2025-05-12 16:49:25,870 - 4 2.92 seconds
+2025-05-12 16:49:25,870 - Task ai_utils.tasks.process_message[8c4e3dd0-47b4-4e40-af04-5f58fb5f66a2] succeeded in 2.922000000020489s: None
+2025-05-12 16:52:51,772 - 4 4.15 seconds
+2025-05-12 16:52:51,772 - Task ai_utils.tasks.process_message[15064667-b1d4-4634-a3d0-f51e477e35b2] succeeded in 4.140999999945052s: None
+2025-05-12 16:53:09,792 - 4 3.56 seconds
+2025-05-12 16:53:09,792 - Task ai_utils.tasks.process_message[e760725a-3220-49d2-ae4a-609bbd731061] succeeded in 3.562999999965541s: None
+2025-05-12 16:53:24,396 - 4 3.65 seconds
+2025-05-12 16:53:24,397 - Task ai_utils.tasks.process_message[60fd62aa-3e33-402f-b7ef-65c26c47c091] succeeded in 3.640999999945052s: None
+2025-05-12 16:59:12,522 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\openai\__init__.py changed, reloading.
+2025-05-12 16:59:17,926 - Loading faiss with AVX2 support.
+2025-05-12 16:59:17,943 - Successfully loaded faiss with AVX2 support.
+2025-05-12 16:59:17,947 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-12 17:28:53,958 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-12 17:28:57,075 - Loading faiss with AVX2 support.
+2025-05-12 17:28:57,091 - Successfully loaded faiss with AVX2 support.
+2025-05-12 17:28:57,096 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-12 17:29:47,953 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-12 17:29:50,961 - Loading faiss with AVX2 support.
+2025-05-12 17:29:50,977 - Successfully loaded faiss with AVX2 support.
+2025-05-12 17:29:50,981 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-12 17:30:46,893 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-12 17:30:54,625 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-12 17:31:07,013 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-12 17:31:13,349 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-12 17:31:13,424 - 4 9.76 seconds
+2025-05-12 17:31:13,438 - Task ai_utils.tasks.process_message[e5bfe8ea-abcc-43cb-8473-24bcd1f71fd9] succeeded in 9.780999999959022s: None
+2025-05-12 17:31:24,403 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-12 17:31:27,787 - Loading faiss with AVX2 support.
+2025-05-12 17:31:27,804 - Successfully loaded faiss with AVX2 support.
+2025-05-12 17:31:27,808 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-12 17:31:29,784 - Task ai_utils.tasks.process_message[57a1599a-2890-466e-b58a-3b44dfe832ea] raised unexpected: NameError("name 'api_key' is not defined")
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\celery\app\trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py", line 48, in process_message
+    openai.api_key = api_key
+                     ^^^^^^^
+NameError: name 'api_key' is not defined
+2025-05-12 17:31:42,479 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-12 17:31:45,717 - Loading faiss with AVX2 support.
+2025-05-12 17:31:45,734 - Successfully loaded faiss with AVX2 support.
+2025-05-12 17:31:45,739 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-12 17:31:57,176 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-12 17:32:07,258 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-12 17:32:10,432 - Loading faiss with AVX2 support.
+2025-05-12 17:32:10,448 - Successfully loaded faiss with AVX2 support.
+2025-05-12 17:32:10,452 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-12 17:32:23,969 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 88, in create_company
+    save_faq_embeddings_for_company(company, faq_data)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 26, in save_faq_embeddings_for_company
+    embedding=embeddings
+              ^^^^^^^^^^
+NameError: name 'embeddings' is not defined
+2025-05-12 17:33:37,560 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-12 17:33:40,680 - Loading faiss with AVX2 support.
+2025-05-12 17:33:40,698 - Successfully loaded faiss with AVX2 support.
+2025-05-12 17:33:40,702 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-12 17:33:55,005 - Task ai_utils.tasks.process_message[f70df0d4-e4cf-4070-a9e1-3b2cb278e077] raised unexpected: NameError("name 'api_key' is not defined")
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\celery\app\trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py", line 48, in process_message
+    openai.api_key = api_key
+                     ^^^^^^^
+NameError: name 'api_key' is not defined
+2025-05-12 17:34:41,116 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-12 17:34:44,401 - Loading faiss with AVX2 support.
+2025-05-12 17:34:44,418 - Successfully loaded faiss with AVX2 support.
+2025-05-12 17:34:44,422 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-12 17:35:07,267 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-12 17:35:10,485 - Loading faiss with AVX2 support.
+2025-05-12 17:35:10,502 - Successfully loaded faiss with AVX2 support.
+2025-05-12 17:35:10,507 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-12 17:35:12,672 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-12 17:35:15,926 - Loading faiss with AVX2 support.
+2025-05-12 17:35:15,943 - Successfully loaded faiss with AVX2 support.
+2025-05-12 17:35:15,947 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-12 17:35:19,417 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-12 17:35:22,209 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-12 17:35:22,327 - 4 6.21 seconds
+2025-05-12 17:35:22,340 - Task ai_utils.tasks.process_message[d18d3186-f819-4a60-95e9-d55fd7c2f981] succeeded in 6.218999999924563s: None
+2025-05-12 17:40:24,755 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-12 17:40:27,400 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-12 17:40:27,471 - 4 5.50 seconds
+2025-05-12 17:40:27,471 - Task ai_utils.tasks.process_message[155cb262-40d7-4c48-8d1a-4d225603bdf9] succeeded in 5.5s: None
+2025-05-12 17:41:01,233 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-12 17:41:04,099 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-12 17:41:04,163 - 4 5.94 seconds
+2025-05-12 17:41:04,163 - Task ai_utils.tasks.process_message[d8aa8c53-1657-460a-b6e0-0554f7c27ae7] succeeded in 5.937000000034459s: None
+2025-05-12 17:42:50,366 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-12 17:42:53,933 - Loading faiss with AVX2 support.
+2025-05-12 17:42:53,951 - Successfully loaded faiss with AVX2 support.
+2025-05-12 17:42:53,955 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-12 17:42:58,593 - 1 1.67 seconds
+2025-05-12 17:42:59,611 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-12 17:43:02,475 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-12 17:43:02,491 - 4 5.56 seconds
+2025-05-12 17:43:02,509 - Task ai_utils.tasks.process_message[e003ac91-ae10-49ca-b8ae-0b478ce5ad97] succeeded in 5.578000000095926s: None
+2025-05-12 17:43:39,524 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-12 17:43:42,797 - Loading faiss with AVX2 support.
+2025-05-12 17:43:42,814 - Successfully loaded faiss with AVX2 support.
+2025-05-12 17:43:42,819 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-12 17:43:51,188 - 1 1.66 seconds
+2025-05-12 17:43:52,206 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-12 17:43:55,049 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-12 17:43:55,068 - 4 3.88 seconds
+2025-05-12 17:43:55,081 - Task ai_utils.tasks.process_message[5fe09f0d-44c0-4e76-b47a-082c8d0fdf7c] succeeded in 5.547000000020489s: None
+2025-05-12 17:49:14,910 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-13 11:56:45,899 - Loading faiss with AVX2 support.
+2025-05-13 11:56:46,114 - Successfully loaded faiss with AVX2 support.
+2025-05-13 11:56:46,119 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-13 11:56:51,366 - Not Found: /favicon.ico
+2025-05-13 11:57:03,277 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-13 11:58:35,658 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-13 12:08:01,664 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-13 12:08:43,172 - Loading faiss with AVX2 support.
+2025-05-13 12:08:43,190 - Successfully loaded faiss with AVX2 support.
+2025-05-13 12:08:43,194 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-13 12:08:49,051 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-13 12:08:49,305 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 88, in create_company
+    save_faq_embeddings_for_company(company, faq_data)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 51, in save_faq_embeddings_for_company
+    documents = data.get('documents', [])
+                ^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'get'
+2025-05-13 12:10:14,641 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-13 12:10:17,783 - Loading faiss with AVX2 support.
+2025-05-13 12:10:17,799 - Successfully loaded faiss with AVX2 support.
+2025-05-13 12:10:17,804 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-13 12:10:31,680 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-13 12:10:32,325 - Internal Server Error: /create-company/
+Traceback (most recent call last):
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\home\views_dir\create_company.py", line 88, in create_company
+    save_faq_embeddings_for_company(company, faq_data)
+  File "C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py", line 50, in save_faq_embeddings_for_company
+    print(f"Total documents stored: {len(index_to_docstore)}\n")
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object of type 'InMemoryDocstore' has no len()
+2025-05-13 12:11:43,709 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-13 12:11:46,952 - Loading faiss with AVX2 support.
+2025-05-13 12:11:46,968 - Successfully loaded faiss with AVX2 support.
+2025-05-13 12:11:46,972 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-13 12:11:53,938 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-13 12:36:50,214 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-13 12:36:57,911 - Loading faiss with AVX2 support.
+2025-05-13 12:36:58,103 - Successfully loaded faiss with AVX2 support.
+2025-05-13 12:36:58,108 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-13 12:37:20,821 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-13 12:37:23,883 - Loading faiss with AVX2 support.
+2025-05-13 12:37:23,900 - Successfully loaded faiss with AVX2 support.
+2025-05-13 12:37:23,904 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-13 12:54:05,513 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-13 13:48:47,730 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-13 13:51:34,683 - Loading faiss with AVX2 support.
+2025-05-13 13:51:34,700 - Successfully loaded faiss with AVX2 support.
+2025-05-13 13:51:34,704 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-13 13:51:45,888 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-13 13:51:52,519 - 1 0.00 seconds
+2025-05-13 13:51:54,102 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-13 13:51:57,207 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 13:51:57,313 - 4 4.79 seconds
+2025-05-13 13:51:57,330 - Task ai_utils.tasks.process_message[2124de1e-6bcf-4df0-99b3-37a8491553e2] succeeded in 4.811999999918044s: None
+2025-05-13 13:52:11,763 - 1 0.00 seconds
+2025-05-13 13:52:13,092 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-13 13:52:16,610 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 13:52:16,694 - 4 4.93 seconds
+2025-05-13 13:52:16,694 - Task ai_utils.tasks.process_message[8167d7be-c12b-4bd5-87a2-472a0f04fb7a] succeeded in 4.937999999965541s: None
+2025-05-13 13:54:08,077 - 1 0.00 seconds
+2025-05-13 13:54:10,163 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-13 13:54:13,153 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 13:54:13,164 - 4 5.09 seconds
+2025-05-13 13:54:13,165 - Task ai_utils.tasks.process_message[7135dbb2-e006-47f9-ba56-77d21935ad4a] succeeded in 5.079000000027008s: None
+2025-05-13 13:54:56,534 - 1 0.00 seconds
+2025-05-13 13:54:57,326 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-13 13:55:00,302 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 13:55:00,309 - 4 3.77 seconds
+2025-05-13 13:55:00,309 - Task ai_utils.tasks.process_message[5dd200b9-25fa-4d07-8412-9db7ae17d81b] succeeded in 3.76500000001397s: None
+2025-05-13 13:55:23,060 - 1 0.00 seconds
+2025-05-13 13:55:24,317 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-13 13:55:27,007 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 13:55:27,016 - 4 3.96 seconds
+2025-05-13 13:55:27,016 - Task ai_utils.tasks.process_message[837258a6-4c90-4596-97e0-446d4763fb69] succeeded in 3.969000000040978s: None
+2025-05-13 13:56:00,235 - 1 0.00 seconds
+2025-05-13 13:56:01,048 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-13 13:56:03,713 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 13:56:03,725 - 4 3.49 seconds
+2025-05-13 13:56:03,725 - Task ai_utils.tasks.process_message[65797c44-ab3d-4ce3-a177-24d9ce4065d8] succeeded in 3.484000000054948s: None
+2025-05-13 13:56:54,769 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-13 13:56:58,106 - Loading faiss with AVX2 support.
+2025-05-13 13:56:58,123 - Successfully loaded faiss with AVX2 support.
+2025-05-13 13:56:58,128 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-13 13:57:00,183 - Task ai_utils.tasks.process_message[5579725b-934f-4dfc-b83d-d9e3197c24f3] succeeded in 1.7650000000139698s: None
+2025-05-13 13:57:49,116 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-13 13:57:52,454 - Loading faiss with AVX2 support.
+2025-05-13 13:57:52,470 - Successfully loaded faiss with AVX2 support.
+2025-05-13 13:57:52,474 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-13 13:57:54,613 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-13 13:57:57,910 - Loading faiss with AVX2 support.
+2025-05-13 13:57:57,927 - Successfully loaded faiss with AVX2 support.
+2025-05-13 13:57:57,931 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-13 13:58:04,093 - Task ai_utils.tasks.process_message[1946334a-088d-46ce-aad1-ccf16ba8d994] succeeded in 1.702999999979511s: None
+2025-05-13 13:58:39,429 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-13 13:58:42,763 - Loading faiss with AVX2 support.
+2025-05-13 13:58:42,779 - Successfully loaded faiss with AVX2 support.
+2025-05-13 13:58:42,783 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-13 14:01:00,556 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-13 14:01:03,664 - Loading faiss with AVX2 support.
+2025-05-13 14:01:03,680 - Successfully loaded faiss with AVX2 support.
+2025-05-13 14:01:03,684 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-13 14:01:11,230 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\save_faq_embeddings_for_company.py changed, reloading.
+2025-05-13 14:01:14,370 - Loading faiss with AVX2 support.
+2025-05-13 14:01:14,388 - Successfully loaded faiss with AVX2 support.
+2025-05-13 14:01:14,392 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-13 14:01:16,507 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-13 14:01:19,771 - Loading faiss with AVX2 support.
+2025-05-13 14:01:19,787 - Successfully loaded faiss with AVX2 support.
+2025-05-13 14:01:19,791 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-13 14:01:25,198 - 1 1.72 seconds
+2025-05-13 14:01:26,355 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-13 14:01:28,871 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 14:01:28,892 - 4 3.69 seconds
+2025-05-13 14:01:28,908 - Task ai_utils.tasks.process_message[d9297aff-22b9-4865-a325-ad572892e95c] succeeded in 5.437999999965541s: None
+2025-05-13 14:01:59,762 - 1 0.00 seconds
+2025-05-13 14:02:00,563 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-13 14:02:03,166 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 14:02:03,183 - 4 3.42 seconds
+2025-05-13 14:02:03,194 - Task ai_utils.tasks.process_message[d8f4c0e1-8995-4f72-a21d-0aec200a6acd] succeeded in 3.437999999965541s: None
+2025-05-13 14:02:44,134 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-13 14:02:47,507 - Loading faiss with AVX2 support.
+2025-05-13 14:02:47,526 - Successfully loaded faiss with AVX2 support.
+2025-05-13 14:02:47,530 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-13 14:04:32,809 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-13 14:04:35,990 - Loading faiss with AVX2 support.
+2025-05-13 14:04:36,009 - Successfully loaded faiss with AVX2 support.
+2025-05-13 14:04:36,014 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-13 14:04:42,588 - 1 1.72 seconds
+2025-05-13 14:04:44,094 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-13 14:04:44,151 - 2 1.56 seconds
+2025-05-13 14:04:47,425 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 14:04:47,522 - 4 4.93 seconds
+2025-05-13 14:04:47,536 - Task ai_utils.tasks.process_message[2eaf9c12-d528-4270-958e-4b429a198cbd] succeeded in 6.672000000020489s: None
+2025-05-13 14:05:32,592 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-13 14:05:35,855 - Loading faiss with AVX2 support.
+2025-05-13 14:05:35,874 - Successfully loaded faiss with AVX2 support.
+2025-05-13 14:05:35,878 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-13 14:05:41,209 - 1 1.72 seconds
+2025-05-13 14:05:42,298 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-13 14:05:42,304 - 2 1.09 seconds
+2025-05-13 14:05:46,239 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 14:05:46,250 - 3 3.95 seconds
+2025-05-13 14:05:46,256 - 4 0.01 seconds
+2025-05-13 14:05:46,271 - Task ai_utils.tasks.process_message[d365d4dd-2d3c-4b60-bbaf-3c45ce9eb085] succeeded in 6.781000000075437s: None
+2025-05-13 14:06:15,841 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-13 14:06:19,121 - Loading faiss with AVX2 support.
+2025-05-13 14:06:19,139 - Successfully loaded faiss with AVX2 support.
+2025-05-13 14:06:19,142 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-13 14:06:59,936 - 1 1.68 seconds
+2025-05-13 14:07:01,386 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-13 14:07:01,483 - 2 1.55 seconds
+2025-05-13 14:07:02,882 - 45 1.40 seconds
+2025-05-13 14:07:04,586 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 14:07:04,600 - 3 1.72 seconds
+2025-05-13 14:07:04,606 - 4 0.00 seconds
+2025-05-13 14:07:04,619 - Task ai_utils.tasks.process_message[3e1652d3-dcf4-4432-8896-2289db73a81f] succeeded in 6.35999999998603s: None
+2025-05-13 14:07:57,269 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-13 14:08:00,563 - Loading faiss with AVX2 support.
+2025-05-13 14:08:00,581 - Successfully loaded faiss with AVX2 support.
+2025-05-13 14:08:00,585 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-13 14:08:24,425 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-13 14:08:27,947 - Loading faiss with AVX2 support.
+2025-05-13 14:08:27,965 - Successfully loaded faiss with AVX2 support.
+2025-05-13 14:08:27,969 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-13 14:08:36,665 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-13 14:08:40,154 - Loading faiss with AVX2 support.
+2025-05-13 14:08:40,171 - Successfully loaded faiss with AVX2 support.
+2025-05-13 14:08:40,175 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-13 14:08:46,710 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-13 14:08:50,143 - Loading faiss with AVX2 support.
+2025-05-13 14:08:50,163 - Successfully loaded faiss with AVX2 support.
+2025-05-13 14:08:50,167 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-13 14:08:54,311 - 1 1.67 seconds
+2025-05-13 14:08:55,569 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-13 14:08:55,725 - 2 1.41 seconds
+2025-05-13 14:08:57,102 - 45 1.38 seconds
+2025-05-13 14:08:58,699 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 14:08:58,790 - 3 1.69 seconds
+2025-05-13 14:08:58,796 - 4 0.01 seconds
+2025-05-13 14:08:58,812 - Task ai_utils.tasks.process_message[98f951da-449f-4abc-8d89-f54160afaa57] succeeded in 6.187999999965541s: None
+2025-05-13 14:11:07,490 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-13 14:11:10,972 - Loading faiss with AVX2 support.
+2025-05-13 14:11:10,989 - Successfully loaded faiss with AVX2 support.
+2025-05-13 14:11:10,993 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-13 14:14:51,183 - 1 1.65 seconds
+2025-05-13 14:14:54,831 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-13 14:14:54,995 - 2 3.81 seconds
+2025-05-13 14:14:56,375 - 45 1.38 seconds
+2025-05-13 14:14:57,971 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-13 14:14:58,061 - 3 1.69 seconds
+2025-05-13 14:14:58,066 - 4 0.01 seconds
+2025-05-13 14:14:58,081 - Task ai_utils.tasks.process_message[ba0353db-e0f7-4b77-ab73-b318e71f8586] succeeded in 8.545999999972992s: None

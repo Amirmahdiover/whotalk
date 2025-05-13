@@ -192,7 +192,7 @@ function convertToEnglishNumbers(input) {
 }
 
 let array = [];
-const apiKey = "a2be25821af25ebc838d1b7a1963aef1b57b89c2:34:f5137824fe056803"; // Connection server
+const apiKey = "a2be25821af25ebc838d1b7a1963aef1b57b89c2:41:3c973fac1ea1efb7"; // Connection server
 
 
 function handleNumberSubmission() {

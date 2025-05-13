@@ -6,9 +6,9 @@ from sklearn.metrics.pairwise import cosine_similarity
 import re
 import logging
 import time
-from langchain_community.vectorstores import FAISS
-from langchain_openai import ChatOpenAI
-from langchain_openai import OpenAIEmbeddings
+from langchain.vectorstores import FAISS
+from langchain_community.embeddings import OpenAIEmbeddings
+from langchain.chat_models import ChatOpenAI
 from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConversationBufferMemory
 import tempfile
@@ -51,7 +51,7 @@ def get_vectorstore_for_company(company):
         with open(metadata_path, "wb") as f:
             f.write(company.faq_index_metadata)
 
-        vectorstore = FAISS.load_local(temp_dir, embeddings, allow_dangerous_deserialization=True)
+        vectorstore = FAISS.load_local(temp_dir, embeddings)
 
     # ✅ Update VECTOR_CACHE after DB load
     VECTOR_CACHE[company_id] = {'vectorstore': vectorstore}
@@ -61,7 +61,7 @@ def get_vectorstore_for_company(company):
 
 @shared_task
 def process_message(message_id, file_data=None, file_name=None):
-    start = time.time()
+
     openai.api_key = os.getenv("OPENAI_API_KEY")
     try:
         message = Meesages.objects.get(id=message_id)
@@ -70,7 +70,7 @@ def process_message(message_id, file_data=None, file_name=None):
         
         vectorstore = get_vectorstore_for_company(company)
 
-        logging.info(f"1 {time.time() - start:.2f} seconds")
+        
         start = time.time()
         if not vectorstore:
             fallback = f'متاسفانه پاسخ شما را ندارم.\n لطفا با پشتیبانی تماس بگیرید: {company.owner.phone_number}'
@@ -113,13 +113,12 @@ def process_message(message_id, file_data=None, file_name=None):
     {context}
 
     سوال کاربر: {question}"""
-
+        
         prompt_template = PromptTemplate(
             input_variables=["brand", "context", "question"],
             template=template
         )
-        logging.info(f"2 {time.time() - start:.2f} seconds")
-        start = time.time()
+
         llm = ChatOpenAI(model="gpt-4o-mini", openai_api_key=os.getenv("OPENAI_API_KEY"))
 
         prompt_input = {
@@ -127,18 +126,9 @@ def process_message(message_id, file_data=None, file_name=None):
             "context": faq_context,
             "question": user_question
         }
-        logging.info(f"45 {time.time() - start:.2f} seconds")
-        start = time.time()
-        prompt_text = f"""شما یک ربات پشتیبانی برای {company.name} هستید.
-        با استفاده از اطلاعات زیر به سوالات کاربران پاسخ دهید:
-
-        {faq_context}
-
-        سوال کاربر: {user_question}"""
-
-        response = llm.invoke(prompt_text).content
-        logging.info(f"3 {time.time() - start:.2f} seconds")
-        start = time.time()
+        
+        response = llm.invoke(prompt_template.format(**prompt_input)).content
+        
         # ✅ Save chatbot response
         Meesages.objects.create(
             text=response,
@@ -149,7 +139,7 @@ def process_message(message_id, file_data=None, file_name=None):
             processed_by_api=False,
             company=company,
         )
-        
+        logging.info(f"1 {time.time() - start:.2f} seconds")
         logging.info(f"4 {time.time() - start:.2f} seconds")
     except Exception as e:
         print(f"Error in process_message: {e}")

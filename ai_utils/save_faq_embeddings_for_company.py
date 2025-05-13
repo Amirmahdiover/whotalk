@@ -1,29 +1,42 @@
-import openai
-import numpy as np
-import pandas as pd
 
-api_key = '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'
-openai.api_key = api_key
+from langchain.vectorstores import FAISS
+from langchain_community.embeddings import OpenAIEmbeddings
+from langchain.schema import Document
+from dotenv import load_dotenv
 
-def save_faq_embeddings_for_company(company, faq_file):
+load_dotenv()
+VECTOR_CACHE={}
+def save_faq_embeddings_for_company(company, faq_data):
+    
 
-    openai.api_key = api_key
+    # Prepare documents
+    docs = [
+        Document(page_content=item["question"], metadata={"answer": item["answer"]})
+        for item in faq_data
+    ]
 
-    embedding_objects = []
+    # Initialize embeddings
+    embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
 
-    for item in faq_file:
-        question = item["question"].strip()
-        answer = item["answer"].strip()
+    # Build FAISS index from documents
+    vectorstore = FAISS.from_documents(
+        documents=docs,
+        embedding=embeddings
+    )
 
-        emb = openai.Embedding.create(
-            model="text-embedding-3-small",
-            input=question
-        ).data[0].embedding
+    # Save FAISS index locally
+    vectorstore.save_local("temp_faiss")
 
-        emb = np.array(emb, dtype='float32')
-        emb = emb / np.linalg.norm(emb)
-        embedding_objects.append(emb)
+    # Read saved index files and store them in the company model
+    with open("temp_faiss/index.faiss", "rb") as f:
+        company.faq_index_faiss = f.read()
 
+    with open("temp_faiss/index.pkl", "rb") as f:
+        company.faq_index_metadata = f.read()
 
-    company.faq_embeddings = np.stack(embedding_objects).tobytes()
     company.save()
+
+    company_id = str(company.id)
+    VECTOR_CACHE[company_id] = {
+        'vectorstore': vectorstore
+    }
