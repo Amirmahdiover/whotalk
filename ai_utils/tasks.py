@@ -16,9 +16,11 @@ import time
 import faiss
 import os
 import json
+from dotenv import load_dotenv
 
+load_dotenv()
 
-api_key = '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'
+api_key = os.getenv("OPENAI_API_KEY")
 
 
 logging.basicConfig(
