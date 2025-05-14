@@ -1,4 +1,4 @@
-import openai
+from openai import OpenAI
 import numpy as np
 import pandas as pd
 import os
@@ -6,11 +6,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 api_key = os.getenv("OPENAI_API_KEY")
-openai.api_key = api_key
 
 def save_faq_embeddings_for_company(company, faq_file):
 
-    openai.api_key = api_key
+    client = OpenAI(api_key=api_key)
 
     embedding_objects = []
 
@@ -18,7 +17,7 @@ def save_faq_embeddings_for_company(company, faq_file):
         question = item["question"].strip()
         answer = item["answer"].strip()
 
-        emb = openai.Embedding.create(
+        emb = client.embeddings.create(
             model="text-embedding-3-small",
             input=question
         ).data[0].embedding
@@ -28,5 +27,13 @@ def save_faq_embeddings_for_company(company, faq_file):
         embedding_objects.append(emb)
 
 
-    company.faq_embeddings = np.stack(embedding_objects).tobytes()
+    embedding_bytes = np.stack(embedding_objects).tobytes()
+
+    if hasattr(company, 'faq_embeddings'):
+        company.faq_embeddings = embedding_bytes
+    elif hasattr(company, 'faq_index_faiss'):
+        company.faq_index_faiss = embedding_bytes
+    else:
+        raise AttributeError("Company model has neither 'faq_embeddings' nor 'faq_index_faiss' field.")
+
     company.save()

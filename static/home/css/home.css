@@ -2974,10 +2974,12 @@ footer.education .social-icone ul li a {
 }
 
 .chat-user-parent .chat-user .chat-user-footer {
-    position: relative;
+    position: absolute;
+    bottom: -4px;
+    left: 2%;
     box-sizing: border-box;
-    width: 95%;
-    height: 120px;
+    width: 96%;
+    height: 80px;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -3036,7 +3038,7 @@ footer.education .social-icone ul li a {
 
 .chat-user-parent .chat-user .chat-user-footer .footer-actions .send-message {
     position: absolute;
-    top: 61%;
+    top: 49%;
     left: 10px;
     display: flex;
     font-size: 0.55em;
