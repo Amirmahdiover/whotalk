@@ -16409,3 +16409,7 @@ TypeError: object of type 'InMemoryDocstore' has no len()
 2025-05-13 14:14:58,061 - 3 1.69 seconds
 2025-05-13 14:14:58,066 - 4 0.01 seconds
 2025-05-13 14:14:58,081 - Task ai_utils.tasks.process_message[ba0353db-e0f7-4b77-ab73-b318e71f8586] succeeded in 8.545999999972992s: None
+2025-05-14 20:08:21,614 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-14 20:08:25,335 - Loading faiss with AVX2 support.
+2025-05-14 20:08:25,352 - Successfully loaded faiss with AVX2 support.
+2025-05-14 20:08:25,356 - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
