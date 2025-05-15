@@ -16258,3 +16258,98 @@ AttributeError: 'OpenAI' object has no attribute 'Embedding'. Did you mean: 'emb
 2025-05-14 15:43:15,809 - 4 3.83 seconds
 2025-05-14 15:43:15,825 - Task ai_utils.tasks.process_message[07365cfa-9fbd-4a81-a073-3e1b7818f9b5] succeeded in 6.437999999965541s: None
 2025-05-14 15:43:27,165 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\cache_history.py changed, reloading.
+2025-05-15 18:07:21,721 - Not Found: /favicon.ico
+2025-05-15 18:07:26,535 - 1 0.68 seconds
+2025-05-15 18:07:26,536 - 2 0.00 seconds
+2025-05-15 18:07:28,289 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-15 18:07:28,297 - 3 1.76 seconds
+2025-05-15 18:07:28,304 - 4 0.01 seconds
+2025-05-15 18:07:28,335 - Task ai_utils.tasks.process_message[86179e13-c6f1-4cd5-8355-e6c34e59c976] succeeded in 2.484000000054948s: None
+2025-05-15 18:07:53,773 - 1 0.68 seconds
+2025-05-15 18:07:53,774 - 2 0.00 seconds
+2025-05-15 18:07:58,797 - Retrying request to /embeddings in 0.451913 seconds
+2025-05-15 18:08:01,203 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-15 18:08:01,205 - 3 7.43 seconds
+2025-05-15 18:08:04,102 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 18:08:05,317 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-15 18:08:05,423 - 4 4.22 seconds
+2025-05-15 18:08:05,423 - Task ai_utils.tasks.process_message[134ee83a-19c2-4131-be0c-ffae8429874d] succeeded in 12.328000000095926s: None
+2025-05-15 18:08:26,973 - 1 0.69 seconds
+2025-05-15 18:08:26,973 - 2 0.00 seconds
+2025-05-15 18:08:28,315 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-15 18:08:28,327 - 3 1.35 seconds
+2025-05-15 18:08:31,391 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 18:08:32,728 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-15 18:08:32,746 - 4 4.42 seconds
+2025-05-15 18:08:32,746 - Task ai_utils.tasks.process_message[811859d2-6fcb-4643-bac9-95efec173025] succeeded in 6.469000000040978s: None
+2025-05-15 18:09:05,986 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.
+2025-05-15 18:09:15,475 - 1 0.70 seconds
+2025-05-15 18:09:15,475 - 2 0.00 seconds
+2025-05-15 18:09:17,024 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-15 18:09:17,030 - 3 1.55 seconds
+2025-05-15 18:09:17,037 - 4 0.01 seconds
+2025-05-15 18:09:17,065 - Task ai_utils.tasks.process_message[e5d44f91-824e-416d-a987-42a92c4889e3] succeeded in 2.297000000020489s: None
+2025-05-15 18:12:25,118 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\cache_history.py changed, reloading.
+2025-05-15 18:12:36,289 - 1 0.71 seconds
+2025-05-15 18:12:36,289 - 2 0.00 seconds
+2025-05-15 18:12:39,482 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-15 18:12:39,492 - 3 3.20 seconds
+2025-05-15 18:12:39,498 - 4 0.01 seconds
+2025-05-15 18:12:39,525 - Task ai_utils.tasks.process_message[ead5cbaf-755b-4836-959d-e4fb53df4168] succeeded in 3.952999999979511s: None
+2025-05-15 18:51:08,258 - 1 0.73 seconds
+2025-05-15 18:51:08,258 - 2 0.00 seconds
+2025-05-15 18:51:09,934 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-15 18:51:09,942 - 3 1.68 seconds
+2025-05-15 18:51:10,883 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 18:51:10,899 - 4 0.96 seconds
+2025-05-15 18:51:10,928 - Task ai_utils.tasks.process_message[a4846e84-6625-47c0-aa3c-11e1ab139c32] succeeded in 3.406000000075437s: None
+2025-05-15 18:51:28,431 - 1 0.69 seconds
+2025-05-15 18:51:28,431 - 2 0.00 seconds
+2025-05-15 18:51:29,274 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-15 18:51:29,280 - 3 0.85 seconds
+2025-05-15 18:51:30,683 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 18:51:30,699 - 4 1.42 seconds
+2025-05-15 18:51:30,700 - Task ai_utils.tasks.process_message[5f3d5439-8223-409c-98c4-8937a7e77482] succeeded in 2.969000000040978s: None
+2025-05-15 18:51:41,424 - 1 0.69 seconds
+2025-05-15 18:51:41,425 - 2 0.00 seconds
+2025-05-15 18:51:42,836 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-15 18:51:42,918 - 3 1.49 seconds
+2025-05-15 18:51:43,805 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 18:51:43,936 - 4 1.02 seconds
+2025-05-15 18:51:43,936 - Task ai_utils.tasks.process_message[8fc86f7b-2d2c-447e-ad95-199a21caa948] succeeded in 3.2040000000270084s: None
+2025-05-15 18:52:07,596 - 1 0.72 seconds
+2025-05-15 18:52:07,596 - 2 0.00 seconds
+2025-05-15 18:52:08,968 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-15 18:52:09,027 - 3 1.43 seconds
+2025-05-15 18:52:09,824 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 18:52:09,907 - 4 0.88 seconds
+2025-05-15 18:52:09,907 - Task ai_utils.tasks.process_message[b6e6314b-6159-4a30-879b-76c7327aea55] succeeded in 3.030999999959022s: None
+2025-05-15 18:52:35,178 - 1 0.68 seconds
+2025-05-15 18:52:35,178 - 2 0.00 seconds
+2025-05-15 18:52:36,362 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-15 18:52:36,363 - 3 1.19 seconds
+2025-05-15 18:52:37,614 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 18:52:37,627 - 4 1.26 seconds
+2025-05-15 18:52:37,627 - Task ai_utils.tasks.process_message[605da902-5222-44e9-bf50-05a736ed3154] succeeded in 3.125s: None
+2025-05-15 18:53:03,796 - 1 0.67 seconds
+2025-05-15 18:53:03,797 - 2 0.00 seconds
+2025-05-15 18:53:04,708 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-15 18:53:04,719 - 3 0.92 seconds
+2025-05-15 18:53:05,617 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 18:53:05,627 - 4 0.91 seconds
+2025-05-15 18:53:05,627 - Task ai_utils.tasks.process_message[e7054504-f375-443f-b14f-cda33e262cbf] succeeded in 2.5s: None
+2025-05-15 18:53:27,474 - 1 0.68 seconds
+2025-05-15 18:53:27,474 - 2 0.00 seconds
+2025-05-15 18:53:28,069 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-15 18:53:28,075 - 3 0.60 seconds
+2025-05-15 18:53:29,010 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 18:53:29,021 - 4 0.95 seconds
+2025-05-15 18:53:29,021 - Task ai_utils.tasks.process_message[29540479-de51-4728-a761-addc03f55727] succeeded in 2.218999999924563s: None
+2025-05-15 18:53:48,135 - 1 0.68 seconds
+2025-05-15 18:53:48,135 - 2 0.00 seconds
+2025-05-15 18:53:49,195 - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-15 18:53:49,202 - 3 1.07 seconds
+2025-05-15 18:53:50,040 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 18:53:50,053 - 4 0.85 seconds
+2025-05-15 18:53:50,053 - Task ai_utils.tasks.process_message[d6ee245b-9889-4e6c-bb7a-f1788aceba1e] succeeded in 2.594000000040978s: None
+2025-05-15 18:58:36,428 - C:\Users\Amirmahdi\Desktop\Chatbot Project\WhoTalk-stable\ai_utils\tasks.py changed, reloading.

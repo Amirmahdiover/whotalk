@@ -11,7 +11,6 @@ import faiss
 import os
 from dotenv import load_dotenv
 from openai import OpenAI
-from ai_utils.cache_history import get_history_embedding, update_history_embedding
 
 load_dotenv()
 
@@ -82,11 +81,6 @@ def process_message(message_id, file_data=None, file_name=None):
             user_embedding = np.array(user_embedding, dtype='float32')
             user_embedding = user_embedding / np.linalg.norm(user_embedding)
 
-            history_embedding, context_similarity, cache_key = get_history_embedding(
-                company.id,
-                message.msg_sender_number,
-                user_embedding
-            )
             # --- Search top-k most similar FAQs using FAISS ---
             k = 3
             D, I = index.search(np.array([user_embedding]), k)
@@ -100,7 +94,7 @@ def process_message(message_id, file_data=None, file_name=None):
             start = time.time()
 
             # --- Filter valid matches based on similarity threshold ---
-            threshold = 0.4  # Higher = stricter match
+            threshold = 0.0  # Higher = stricter match
             top_indices = I[0]
             top_distances = D[0]
 
@@ -110,48 +104,11 @@ def process_message(message_id, file_data=None, file_name=None):
             ]
 
             print('valid_indices:', valid_indices)
-            # Step 4: Compute similarity between user_embedding and history_embedding
             
-            print('*****************',history_embedding)
-            print(f"Context Similarity: {context_similarity:.4f}")
-
             # --- If no valid matches, fallback to contact support ---
 
 
             if valid_indices:
-                # --- Prepare FAQ context for GPT prompt from valid matches ---
-                print('---------------------------valid_indices is running!')
-                top_faqs = [faq_data[i] for i in valid_indices]
-                print('top_faqs:', top_faqs)
-
-                faq_context = "\n\n".join([f"{item['question']}\n{item['answer']}" for item in top_faqs])
-
-                # --- Construct prompt with FAQ, chat history, and user question ---
-                prompt_system = f"""
-                شما یک ربات پشتیبانی حرفه‌ای برای برند {company.name} هستید.
-                با استفاده از اطلاعات زیر به سوالات کاربران پاسخ دهید.
-                **پاسخ ها طولانی نباشد**
-		        """
-                prompt_user = f"""
-                {history_context}
-                سوال کاربر: {user_question}
-                """
-
-                print("📤 PROMPT TO CHATGPT:\n", prompt_user)
-
-                # --- Generate chatbot reply using OpenAI GPT ---
-                response = client.chat.completions.create(
-                    model="gpt-4o-mini",
-                    messages=[
-                        {"role": "system", "content": prompt_system},
-                        {"role": "user", "content": prompt_user}
-                    ]
-                )
-
-                chatgpt_response = response.choices[0].message.content.strip()
-                processed_by_api = True
-            elif context_similarity > 0.65:
-                print('---------------------------context similarity is running!')
                                 # --- Prepare FAQ context for GPT prompt from valid matches ---
                 top_faqs = [faq_data[i] for i in valid_indices]
                 print('top_faqs:', top_faqs)
@@ -160,16 +117,19 @@ def process_message(message_id, file_data=None, file_name=None):
 
                 # --- Construct prompt with FAQ, chat history, and user question ---
                 prompt_system = f"""
-                شما یک ربات پشتیبانی حرفه‌ای برای برند {company.name} هستید.
+                شما یک ربات پشتیبانی برای{company.name} هستید.
                 با استفاده از اطلاعات زیر به سوالات کاربران پاسخ دهید.
-                **پاسخ ها طولانی نباشد**
-		        """
+                اگر سوالات مربوط به تاریخ چت گفت و گو یا کمپانی نبود بگو با پشتیبانی تماس بگیرید : {company.owner.phone_number}
+                **پاسخ ها کوتاه باشد**
+                """
                 prompt_user_with_history = f"""
                 {faq_context}
                 تاریخچه گفتگو:
                 {history_context}
                 سوال کاربر: {user_question}
                 """
+
+
 
                 print("📤 PROMPT TO CHATGPT:\n", prompt_user_with_history)
 
@@ -183,11 +143,7 @@ def process_message(message_id, file_data=None, file_name=None):
                 )
                 chatgpt_response = response.choices[0].message.content.strip()
                 processed_by_api = True
-            else:    
-                chatgpt_response = f' متاسفانه پاسخ شما را نمیتوانم بدهم.\n لطفا با پشتیبانی تماس بگیرید: {company.owner.phone_number}'
-                processed_by_api = False
-
-        update_history_embedding(cache_key, history_embedding, user_embedding, chatgpt_response, history_context, user_question)
+            
         # --- Get admin user's image URL (if available) ---
         full_img_url = admin_user.image.url if admin_user and admin_user.image else ''
 
