@@ -8,6 +8,25 @@ from ..models import Company
 from ai_utils.save_faq_embeddings_for_company import save_faq_embeddings_for_company
 from django.core.exceptions import ValidationError
 
+def merge_faq_default(faq_excel):
+    data = {
+        'سوال': [
+            'سلام',
+        ],
+        'پاسخ': [
+            'سلام دوست عزیز! چطور می‌تونم کمکتون کنم؟',
+        ]
+        }
+    df = pd.DataFrame(data)
+    pd_merged=pd.concat([df, faq_excel], ignore_index=True)
+    faq_data = [
+        {"question": row["سوال"], "answer": row["پاسخ"]}
+        for _, row in pd_merged.iterrows()
+    ]
+    return faq_data
+
+
+
 @login_required(login_url='../login/')
 def create_company(request):
     if request.method == 'POST':
@@ -79,10 +98,7 @@ def create_company(request):
                         # Read Excel
 
                     faq_excel = pd.read_excel(faq_company)
-                    faq_data = [
-                        {"question": row["سوال"], "answer": row["پاسخ"]}
-                        for _, row in faq_excel.iterrows()
-                    ]
+                    faq_data=merge_faq_default(faq_excel=faq_excel)
                     company.faq_json=faq_data
                     company.save()
                     save_faq_embeddings_for_company(company, faq_data)

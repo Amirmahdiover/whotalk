@@ -195,7 +195,7 @@
                 </a>
             </div>
 
-            <div class="menu-item">
+            {% comment %} <div class="menu-item">
                 <a class="settings-dashboard" href="">
                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                          width="20px" height="20px" viewBox="0 0 512.000000 512.000000"
@@ -249,7 +249,7 @@
                     </svg>
                     <p>تنظیمات</p>
                 </a>
-            </div>
+            </div> {% endcomment %}
 
             <div class="menu-item">
                 <a class="settings-dashboard" href="{% url 'home:factor' %}">
@@ -414,7 +414,10 @@
                     <div class="create-text">
                         <p style="text-align: center;">چت‌بات هوشمند خودت را بساز!</p>
                         <div style="text-align: center; margin-top: 20px; margin-bottom: 10px;">
-                            <button class="create-chatbot-btn" onclick="openModal()">ساخت چت‌بات</button>
+                            <p id="subscription-message" style="color: red; text-align: center; display: none;">
+                                <!-- This text will be updated by JS -->
+                            </p>
+                            <button class="create-chatbot-btn" onclick="checkUserSubscriptionAndCreateChatbot()">ساخت چت‌بات</button>
                         </div>
                     </div>
 
@@ -480,8 +483,9 @@
         </div>
     </div>
 
-
     <script src="{% static '/home/js/dashboard.js' %}"></script>
+    <script src="{% static 'home/js/checkUserSub.js' %}"></script>
+
 
     {#    <script>#}
     {#        (function () {#}

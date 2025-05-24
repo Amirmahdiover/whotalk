@@ -136,6 +136,7 @@
                         {% endif %}
                         <form class="text-right" method="post" action="{% url 'home:user_login' %}">
                             {% csrf_token %}
+                            <input type="hidden" name="next" value="{{ next }}">
                             <div class="username">
                                 <label class="mb-0" for="exampleInputEmail1">شماره تماس</label>
                                 <input type="text" class="form-control" id="exampleInputEmail1" placeholder="شماره تماس"

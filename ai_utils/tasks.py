@@ -94,7 +94,7 @@ def process_message(message_id, file_data=None, file_name=None):
             start = time.time()
 
             # --- Filter valid matches based on similarity threshold ---
-            threshold = 0.0  # Higher = stricter match
+            threshold = 0.4  # Higher = stricter match
             top_indices = I[0]
             top_distances = D[0]
 
@@ -111,21 +111,16 @@ def process_message(message_id, file_data=None, file_name=None):
             if valid_indices:
                                 # --- Prepare FAQ context for GPT prompt from valid matches ---
                 top_faqs = [faq_data[i] for i in valid_indices]
-                print('top_faqs:', top_faqs)
 
-                faq_context = "\n\n".join([f"{item['question']}\n{item['answer']}" for item in top_faqs])
+                # faq_context = "\n\n".join([f"{item['question']}\n{item['answer']}" for item in top_faqs])
+                faq_context = "\n\n".join([f"{item['answer']}" for item in top_faqs])
 
                 # --- Construct prompt with FAQ, chat history, and user question ---
                 prompt_system = f"""
                 شما یک ربات پشتیبانی برای{company.name} هستید.
-                با استفاده از اطلاعات زیر به سوالات کاربران پاسخ دهید.
-                اگر سوالات مربوط به تاریخ چت گفت و گو یا کمپانی نبود بگو با پشتیبانی تماس بگیرید : {company.owner.phone_number}
-                **پاسخ ها کوتاه باشد**
                 """
                 prompt_user_with_history = f"""
                 {faq_context}
-                تاریخچه گفتگو:
-                {history_context}
                 سوال کاربر: {user_question}
                 """
 
@@ -143,7 +138,33 @@ def process_message(message_id, file_data=None, file_name=None):
                 )
                 chatgpt_response = response.choices[0].message.content.strip()
                 processed_by_api = True
-            
+            else:
+                                # --- Construct prompt with FAQ, chat history, and user question ---
+                prompt_system = f"""
+                شما یک ربات پشتیبانی برای{company.name} هستید.
+                
+                اگر سوال کاریبر غیر مرتبط بود پاسخ نده و فقط بگو لطفا با پشتیبانی تماس بگیرید 
+                شماره پشتیبانی : {company.owner.phone_number}
+                """
+                prompt_user_with_history = f"""
+                تاریخچه گفتگو:
+
+                {history_context}
+                سوال کاربر: {user_question}
+
+                """
+                print("📤 PROMPT TO CHATGPT:\n", prompt_user_with_history)
+
+                # --- Generate chatbot reply using OpenAI GPT ---
+                response = client.chat.completions.create(
+                    model="gpt-4o-mini",
+                    messages=[
+                        {"role": "system", "content": prompt_system},
+                        {"role": "user", "content": prompt_user_with_history}
+                    ]
+                )
+                chatgpt_response = response.choices[0].message.content.strip()
+                processed_by_api = True
         # --- Get admin user's image URL (if available) ---
         full_img_url = admin_user.image.url if admin_user and admin_user.image else ''
 
