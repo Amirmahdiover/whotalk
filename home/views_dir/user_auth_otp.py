@@ -23,49 +23,27 @@ def send_otp_code(phone_number, code):
     :param code: رشته یا عدد کد OTP که باید ارسال شود
     :return: True در صورت موفقیت ارسال، False در غیر این صورت
     """
-    
-    conn = http.client.HTTPSConnection("api.sms.ir")
-    payload ={
-                "mobile": f"{phone_number}",
-                "templateId": 123456,
-                "parameters": [
-                {
-                    "name": "Code",
-                    "value": "12345"
-                }
-                ]
-            }
-    payload = f"""{
-    "mobile": "{phone_number}",
-    "templateId": 123456,
-    "parameters": [
-        {
-        "name": "Code",
-        "value": 123456
-        }
-    ]
-    }"""
-    headers = {
-        'Accept': 'text/plain',
-        'Content-Type': 'application/json',
-        'x-api-key': 'C48EkMG2nBLSkwvO8Xei4GJA9Jcj0ZPVWC9JAyhmiA7YbchM',
+    url = "https://api.sms.ir/v1/send/bulk"
+    payload = {
+        "lineNumber": 30002108002028,
+        "messageText": f"هوتاک\nکد تایید: {code}",
+        "mobiles": [phone_number],
+        "sendDateTime": None
     }
-    # try:
-    print('---------------------------------12')
-    conn.request("POST", "/v1/send/verify", payload, headers)
-    res = conn.getresponse()
-    data = res.read()
-    response_text = data.decode("utf-8")
-    # print("Response from SMS.ir:-------------------------", response_text)
-        # response = requests.post(url, json=payload, headers=headers, verify=True)
-        # response_dict = response.json()
-    #     if response_dict.get("status") == 1:
-    #         return True
-    #     else:
-    #         return False
-    # except Exception as e:
-    #     print("Error sending OTP:", e)
-    #     return False
+    headers = {
+        'X-API-KEY': 'C48EkMG2nBLSkwvO8Xei4GJA9Jcj0ZPVWC9JAyhmiA7YbchM',
+        'Content-Type': 'application/json'
+    }
+    try:
+        response = requests.post(url, json=payload, headers=headers, verify=True)
+        response_dict = response.json()
+        if response_dict.get("status") == 1:
+            return True
+        else:
+            return False
+    except Exception as e:
+        print("Error sending OTP:", e)
+        return False
 
 
 def register(request):
