@@ -172,7 +172,7 @@ function convertToEnglishNumbers(input) {
 }
 
 let array = [];
-const apiKey = "67280590d4234964b059bb71643249e065ad7813:14:30caf1a1207db4f8"; // Connection
+const apiKey = "8b04d7790803d027396498c9ac879bb33d26cbd2:1:8a30bd1bcb2d9522"; // Connection
 
 function handleNumberSubmission() {
     let numberValue = convertToEnglishNumbers(number.value);
