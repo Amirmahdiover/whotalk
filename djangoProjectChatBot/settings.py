@@ -158,9 +158,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'account.User'
 
-CSRF_TRUSTED_ORIGINS = ['https://*', 'http://*', 'https://whotalkgit.darkube.app', 'https://whotalk.app',
-                        'https://ireferreee.darkube.app', 'https://127.0.0.1:8000', 'https://ireferr.com',
-                        'https://www.ireferr.com', 'https://hesaa.me']
+CSRF_TRUSTED_ORIGINS = [
+    "https://whotalk.app",
+    "https://www.whotalk.app",
+    "https://127.0.0.1:8000",
+]
 
 REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': (
