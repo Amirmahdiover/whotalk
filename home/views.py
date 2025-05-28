@@ -323,7 +323,6 @@ def user_logout(request):
 
 def get_company_from_api_key(request):
     data = json.loads(request.body)
-    # print(data['apikey'])
     try:
         # تلاش برای پیدا کردن شرکت با استفاده از API key
         company = Company.objects.get(api_key=data['apikey'])
