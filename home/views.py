@@ -333,50 +333,54 @@ def get_company_from_api_key(request):
 
 
 def connection(request):
-    data = json.loads(request.body)
-    print('dataaaaaaaaaaaaaaaaaaaaaa: ',data)
-    # print(request.user.name)
-    company = get_object_or_404(Company, name=data['company'])
-    print('no erooooooooooooooooooooooooor')
-    connection = Connection.objects.filter(userEmail=data['userEmail'], userNumber=data['userNumber'],
-                                           company=company).exists()
-    # Online Admin
-    admin = User.objects.get(is_staff=True, name=data['admin'])
+    try:
 
-    # if (len(admin) >= 2):
-    #     admin = admin[rand.randint(0, len(admin) - 1)]
-    # elif (len(admin) < 2 and len(admin) >= 1):
-    #     admin = admin[0]
-    # else:
-    #     admin = 'Offline'
+        data = json.loads(request.body)
+        print('dataaaaaaaaaaaaaaaaaaaaaa: ',data)
+        # print(request.user.name)
+        company = get_object_or_404(Company, name=data['company'])
+        print('no erooooooooooooooooooooooooor')
+        connection = Connection.objects.filter(userEmail=data['userEmail'], userNumber=data['userNumber'],
+                                            company=company).exists()
+        # Online Admin
+        admin = User.objects.get(is_staff=True, name=data['admin'])
 
-    # Connection
-    if connection and admin != 'Offline':
-        Connection.objects.filter(userEmail=data['userEmail'], userNumber=data['userNumber'], company=company).delete()
-        Connection.objects.create(userEmail=data['userEmail'], userNumber=data['userNumber'], company=company,
-                                  admin=admin.name)
-        return JsonResponse({'connection': 'isThere', 'admin': str(admin.name), 'admin_url': admin.image.url,
-                             'company_name': company.name},
-                            safe=True)
-    elif connection == False and admin != 'Offline':
-        Connection.objects.create(userEmail=data['userEmail'], userNumber=data['userNumber'], company=company,
-                                  admin=admin.name)
-        return JsonResponse({'connection': 'connect', 'admin': str(admin.name), 'admin_url': admin.image.url,
-                             'company_name': company.name},
-                            safe=True)
-    elif connection and admin == 'Offline':
-        Connection.objects.filter(userEmail=data['userEmail'], userNumber=data['userNumber'], company=company).delete()
-        Connection.objects.create(userEmail=data['userEmail'], userNumber=data['userNumber'], company=company,
-                                  admin=admin)
-        return JsonResponse(
-            {'connection': 'isThere', 'admin': str(admin), 'admin_url': '../../static/home/img/chat.png',
-             'company_name': company.name}, safe=True)
-    else:
-        Connection.objects.create(userEmail=data['userEmail'], userNumber=data['userNumber'], company=company,
-                                  admin=admin)
-        return JsonResponse(
-            {'connection': 'connect', 'admin': str(admin), 'admin_url': '../../static/home/img/chat.png',
-             'company_name': company.name}, safe=True)
+        # if (len(admin) >= 2):
+        #     admin = admin[rand.randint(0, len(admin) - 1)]
+        # elif (len(admin) < 2 and len(admin) >= 1):
+        #     admin = admin[0]
+        # else:
+        #     admin = 'Offline'
+
+        # Connection
+        if connection and admin != 'Offline':
+            Connection.objects.filter(userEmail=data['userEmail'], userNumber=data['userNumber'], company=company).delete()
+            Connection.objects.create(userEmail=data['userEmail'], userNumber=data['userNumber'], company=company,
+                                    admin=admin.name)
+            return JsonResponse({'connection': 'isThere', 'admin': str(admin.name), 'admin_url': admin.image.url,
+                                'company_name': company.name},
+                                safe=True)
+        elif connection == False and admin != 'Offline':
+            Connection.objects.create(userEmail=data['userEmail'], userNumber=data['userNumber'], company=company,
+                                    admin=admin.name)
+            return JsonResponse({'connection': 'connect', 'admin': str(admin.name), 'admin_url': admin.image.url,
+                                'company_name': company.name},
+                                safe=True)
+        elif connection and admin == 'Offline':
+            Connection.objects.filter(userEmail=data['userEmail'], userNumber=data['userNumber'], company=company).delete()
+            Connection.objects.create(userEmail=data['userEmail'], userNumber=data['userNumber'], company=company,
+                                    admin=admin)
+            return JsonResponse(
+                {'connection': 'isThere', 'admin': str(admin), 'admin_url': '../../static/home/img/chat.png',
+                'company_name': company.name}, safe=True)
+        else:
+            Connection.objects.create(userEmail=data['userEmail'], userNumber=data['userNumber'], company=company,
+                                    admin=admin)
+            return JsonResponse(
+                {'connection': 'connect', 'admin': str(admin), 'admin_url': '../../static/home/img/chat.png',
+                'company_name': company.name}, safe=True)
+    except Exception as e:
+        return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
 # Send message view

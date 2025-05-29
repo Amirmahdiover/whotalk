@@ -185,3 +185,24 @@ ZARINPAL_WEBSERVICE = "https://www.zarinpal.com/pg/services/WebGate/wsdl"
 # EMAIL_HOST_PASSWORD = '2002350Mh'
 # DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 CELERY_TASK_ALWAYS_EAGER = True
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,  # Don't kill Django’s default loggers
+    'formatters': {
+        'simple': {
+            'format': '[{levelname}] {asctime} {name} - {message}',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple',
+        },
+    },
+    'root': {
+        'handlers': ['console'],
+        'level': 'INFO',  # Change to DEBUG if you want more logs
+    },
+}
