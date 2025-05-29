@@ -9,6 +9,7 @@ from .views_dir.login import user_login,logins
 from .views_dir.check_sub import check_subscription_btn
 from .views_dir.pricing_check_auth import pricing,choose_plan
 
+app_name='home'
 
 urlpatterns = [
      path('', views.home, name='home'),
