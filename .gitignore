@@ -3,3 +3,5 @@
 tasks.log
 db.sqlite3
 /staticfiles/
+__pycache__/
+*.pyc
