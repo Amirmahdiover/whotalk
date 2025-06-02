@@ -620,6 +620,7 @@ def send_admin_message(request):
 def get_user_message(request):
     data = json.loads(request.body)
     admin = request.user
+    return JsonResponse(admin, safe=False)
     list = []
     records = Meesages.objects.filter(msg_sender=data['msg_sender'], msg_receiver=admin.name,
                                       msg_sender_number=data['msg_sender_number'], received=False)
