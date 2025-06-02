@@ -152,7 +152,7 @@ class MessageListView(APIView):
         msg_sender = request.query_params.get('msg_sender')
         msg_sender_number = request.query_params.get('msg_sender_number')
         
-        if not msg_sender or not msg_sender_number or msg_sender == "null":
+        if not msg_sender or not msg_sender_number:
             return Response({"error": "msg_sender and msg_sender_number are required."},
                             status=status.HTTP_400_BAD_REQUEST)
 
