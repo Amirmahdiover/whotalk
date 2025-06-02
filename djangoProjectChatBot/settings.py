@@ -206,3 +206,12 @@ LOGGING = {
         'level': 'INFO',  # Change to DEBUG if you want more logs
     },
 }
+
+import sentry_sdk
+
+sentry_sdk.init(
+    dsn="https://3e175ce55c01bb04c39ed4a08c0024b4@o4509428262830080.ingest.de.sentry.io/4509428264534096",
+    # Add data like request headers and IP for users,
+    # see https://docs.sentry.io/platforms/python/data-management/data-collected/ for more info
+    send_default_pii=True,
+)

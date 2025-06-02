@@ -83,12 +83,10 @@ class Meesages(models.Model):
     msg_receiver_number = models.CharField(max_length=50, blank=True, null=True)
     received = models.BooleanField(default=False)
     processed_by_api = models.BooleanField(default=False)
-    create = models.DateTimeField(auto_now_add=True)
     create = models.DateTimeField(default=timezone.now)
     msgImg = models.CharField(max_length=255, blank=True, null=True)
     msgFile = models.FileField(upload_to='file_msg_uploaded', blank=True, null=True)
-    company = models.ForeignKey(Company, on_delete=models.CASCADE, related_name='messages', null=True,
-                                blank=True)  # Link to a company
+    company = models.ForeignKey(Company, on_delete=models.CASCADE, related_name='messages')  # Link to a company
     question_embedding=models.JSONField(null=True, blank=True)
 
     def __str__(self):
