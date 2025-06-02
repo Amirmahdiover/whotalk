@@ -152,7 +152,7 @@ class MessageListView(APIView):
         msg_sender = request.query_params.get('msg_sender')
         msg_sender_number = request.query_params.get('msg_sender_number')
         
-        if not msg_sender or not msg_sender_number:
+        if not msg_sender or not msg_sender_number or msg_sender == "null":
             return Response({"error": "msg_sender and msg_sender_number are required."},
                             status=status.HTTP_400_BAD_REQUEST)
 
@@ -336,22 +336,12 @@ def connection(request):
     try:
 
         data = json.loads(request.body)
-        print('dataaaaaaaaaaaaaaaaaaaaaa: ',data)
-        # print(request.user.name)
         company = get_object_or_404(Company, name=data['company'])
-        print('no erooooooooooooooooooooooooor')
         connection = Connection.objects.filter(userEmail=data['userEmail'], userNumber=data['userNumber'],
                                             company=company).exists()
         # Online Admin
         admin = User.objects.get(is_staff=True, name=data['admin'])
-
-        # if (len(admin) >= 2):
-        #     admin = admin[rand.randint(0, len(admin) - 1)]
-        # elif (len(admin) < 2 and len(admin) >= 1):
-        #     admin = admin[0]
-        # else:
-        #     admin = 'Offline'
-
+        
         # Connection
         if connection and admin != 'Offline':
             Connection.objects.filter(userEmail=data['userEmail'], userNumber=data['userNumber'], company=company).delete()
@@ -380,7 +370,7 @@ def connection(request):
                 {'connection': 'connect', 'admin': str(admin), 'admin_url': '../../static/home/img/chat.png',
                 'company_name': company.name}, safe=True)
     except Exception as e:
-        return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        return JsonResponse({"error": str(e)}, status=500)
 
 
 # Send message view
@@ -1100,3 +1090,6 @@ def factor_view(request):
         # حذف ممیز از مبلغ (به صورت تبدیل به int)
         transaction.amount_int = int(transaction.amount)
     return render(request, "admin/factor.html", {"transactions": transactions})
+
+def trigger_error(request):
+    division_by_zero = 1 / 0
