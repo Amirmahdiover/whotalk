@@ -35,7 +35,9 @@ def process_message(message_id, file_data=None, file_name=None):
     try:
         # --- Load message, company, and admin user from DB ---
         message = Meesages.objects.get(id=message_id)
+        print('-----------------',message.text)
         company = message.company
+        print('-----------------',company.name)
         admin_user = User.objects.get(name=message.msg_receiver)
         user_question = message.text.strip()
 

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Chat Widget</title>
+</head>
+<body>
+    <h1>Testing the Chat Widget</h1>
+
+    <!-- Your actual widget script -->
+    <script>
+        (function () {
+            const BUTTON_IMAGE_URL = "https://whotalk.app/static/home/img/chat-white-round.svg";
+            const HEADER_IMAGE_URL = "https://whotalk.app/static/home/img/chat-white-round.svg";
+            const SCRIPT_URL = "https://whotalk.app/static/home/js/newj.js";
+
+            fetch('http://localhost:8000/api/validate_domain_and_get_api_key/', {
+                method: "POST",
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({}),
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.valid) {
+                        const API_KEY = data.api_key;
+                        const script = document.createElement("script");
+                        script.src = SCRIPT_URL;
+                        script.onload = () => {
+                            initializeChatWidget(API_KEY, BUTTON_IMAGE_URL, HEADER_IMAGE_URL);
+                        };
+                        document.body.appendChild(script);
+                    } else {
+                        console.error("Unauthorized domain. Chat widget cannot be loaded.");
+                    }
+                })
+                .catch(error => {
+                    console.error("Error fetching API Key:", error);
+                });
+        })();
+    </script>
+</body>
+</html>

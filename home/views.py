@@ -620,7 +620,6 @@ def send_admin_message(request):
 def get_user_message(request):
     data = json.loads(request.body)
     admin = request.user
-    return JsonResponse(admin, safe=False)
     list = []
     records = Meesages.objects.filter(msg_sender=data['msg_sender'], msg_receiver=admin.name,
                                       msg_sender_number=data['msg_sender_number'], received=False)
@@ -813,7 +812,7 @@ def privacy_policy(request):
 
 @csrf_exempt
 def validate_domain_and_get_api_key(request):
-    print('out valid state')
+    # print('out valid state')
     """
     Validate the domain from Referer header and return the API key for the corresponding company.
     """

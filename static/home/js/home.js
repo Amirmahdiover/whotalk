@@ -715,7 +715,7 @@ let adminMessageCreator = (data) => {
             } else {
                 clearInterval(typeInterval);
             }
-        }, 50); // سرعت تایپ (قابل تغییر)
+        }, 30); // سرعت تایپ (قابل تغییر)
     });
 };
 
@@ -758,9 +758,11 @@ let getAdminMessages = () => {
             .then(data => {
                 // console.log(data);
                 if (data.length > 0) {
-                    setTimeout(function () {
-                        adminMessageCreator(data)
-                    }, 2000)
+                    adminMessageCreator(data)
+                    // console.log("Received from backend:", data);
+                    // setTimeout(function () {
+                    //     adminMessageCreator(data)
+                    // }, 80000)
                 }
             })
     }

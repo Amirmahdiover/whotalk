@@ -79,5 +79,6 @@ urlpatterns = [
      path('payment/verify/', views.payment_verify_view, name='payment_verify'),
      path('factor/', views.factor_view, name='factor'),
      path('check-subscription/', check_subscription_btn, name='check_subscription'),
-     path('choose-plan/', choose_plan, name='choose_plan')
+     path('choose-plan/', choose_plan, name='choose_plan'),
+     path('sentry-debug/', views.trigger_error),
 ]
