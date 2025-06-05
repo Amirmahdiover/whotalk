@@ -769,7 +769,7 @@ let getAdminMessages = () => {
 }
 
 // getAdminMessages()
-setInterval(getAdminMessages, 2000)
+setInterval(getAdminMessages, 20000)
 //
 
 let onlineAdminFinder = () => {
