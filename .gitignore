@@ -1,1 +1,10 @@
+env
 .env
+*/**/__pycache__
+tasks.log
+db.sqlite3
+/staticfiles/
+__pycache__/
+*.pyc
+/media/faq_uploaded/
+/media/images_uploaded/
