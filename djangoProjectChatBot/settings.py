@@ -162,6 +162,7 @@ CSRF_TRUSTED_ORIGINS = [
     "https://whotalk.app",
     "https://www.whotalk.app",
     "https://127.0.0.1:8000",
+    'https://salam.darkube.app/'
 ]
 
 REST_FRAMEWORK = {
