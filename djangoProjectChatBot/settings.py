@@ -69,6 +69,8 @@ CORS_ALLOWED_ORIGINS = [
     'https://ireferr.com',
     'https://www.ireferr.com',
     'https://hesaa.me',
+    'https://salam.darkube.app/'
+
 ]
 
 TEMPLATES = [
@@ -93,7 +95,7 @@ ALLOWED_HOSTS = ['https://nouramed.com/', '*', 'api.ip.pn', '127.0.0.1', 'localh
                  'www.whotalk.darkube.app', 'www.whotalk.app', 'https://whotalk.app',
                  'http://whotalk.app', 'https://www.whotalk.app', 'https://whotalkgit.darkube.app',
                  'whotalk.darkube.app', 'https://ireferreee.darkube.app', 'ireferreee.darkube.app',
-                 'https://ireferr.com', 'https://www.ireferr.com', 'https://hesaa.me']
+                 'https://ireferr.com', 'https://www.ireferr.com', 'https://hesaa.me','https://salam.darkube.app/']
 
 if DEBUG:
     DATABASES = {
